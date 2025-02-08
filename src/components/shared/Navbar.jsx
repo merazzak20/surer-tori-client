@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
 import { FaDownload } from "react-icons/fa6";
 import { motion } from "framer-motion";
@@ -11,6 +11,20 @@ import Container from "./Container";
 const Navbar = () => {
   //   const { user } = useContext(AuthContext);
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 80) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const links = (
     <>
       <li>
@@ -74,7 +88,13 @@ const Navbar = () => {
   );
 
   return (
-    <header className="fixed top-0 left-0 w-full z-40 bg-[#140505] bg-gradient-to-b from-zinc-950 to-zinc-900/0 ">
+    <header
+      className={`fixed top-0 left-0 w-full z-40  transition-all duration-300 ${
+        isScrolled
+          ? "bg-[#140505] bg-gradient-to-b from-[#140505] to-[#140505]/0 shadow-lg"
+          : "bg-gradient-to-b from-[#140505] to-[#140505]/80"
+      }`}
+    >
       <Container>
         <div className="navbar flex items-center">
           {/* Logo and Navigation for Larger Devices */}
