@@ -1,2 +1,40 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.title {
+  /* display: none; */
+  position: absolute;
+  width: 280px;
+  height: 200px;
+  border: 3px solid #9c2227;
+  top: -120px;
+  left: -120px;
+
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 30% 35%, 30% 100%, 0 100%);
+}
+.title::before {
+  content: "";
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+.sectionTitle {
+  /* display: none; */
+  position: absolute;
+  width: 280px;
+  height: 150px;
+  border: 3px solid #9c2227;
+  top: -100px;
+  left: -120px;
+
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 30% 35%, 30% 100%, 0 100%);
+}
+.sectionTitle::before {
+  content: "";
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+  float: left;
+}

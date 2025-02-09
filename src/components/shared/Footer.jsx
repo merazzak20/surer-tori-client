@@ -22,7 +22,7 @@ const Footer = () => {
       }}
     >
       <Container>
-        <footer className="footer sm:footer-horizontal text-neutral-content p-10 flex justify-around">
+        <footer className="footer sm:footer-horizontal text-neutral-content p-10 flex flex-col md:flex-row justify-around">
           <aside>
             <img className="w-28" src={logo} alt="Sorer Tori" />
             <p>

@@ -12,11 +12,11 @@ const Hero = () => {
   return (
     <div>
       <Swiper
-        // scrollbar={{
-        //   hide: true,
-        // }}
+        scrollbar={{
+          hide: false,
+        }}
         autoplay={{
-          delay: 1000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         loop={true}

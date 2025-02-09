@@ -111,18 +111,15 @@ const Navbar = () => {
 
           {/* Download Resume Button */}
           <div className="navbar-end flex flex-row">
-            <div className="hidden md:inline-block">
+            <div className="">
               {/* <div className="">
                 <ul className="menu menu-horizontal px-1">{links}</ul>
               </div> */}
 
-              <a
-                href="https://drive.google.com/file/d/1PFXraJNWyzpTFun3tzu1ZarCrqr9hY8j/view?usp=sharing"
-                target="_blank"
-                className="btn btn-outline rounded-none text-[#d2ab69] hover:bg-[#aa8e5e]"
-              >
-                Download Resume <FaDownload />
-              </a>
+              <div className="join">
+                <button className="btn join-item bg-[#9C2227]">Eng</button>
+                <button className="btn join-item bg-[#9C2227]">BD</button>
+              </div>
             </div>
 
             <div className="md:hidden">
