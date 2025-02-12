@@ -29,7 +29,7 @@ const Hero = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            minHeight: "80vh",
+            minHeight: "100vh",
           }}
         >
           <Container>
@@ -42,7 +42,7 @@ const Hero = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            minHeight: "80vh",
+            minHeight: "100vh",
           }}
         >
           <Container>
@@ -55,7 +55,7 @@ const Hero = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            minHeight: "80vh",
+            minHeight: "100vh",
           }}
         >
           <Container>

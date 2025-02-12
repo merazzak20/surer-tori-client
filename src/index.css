@@ -38,3 +38,44 @@
   width: 100%;
   float: left;
 }
+
+@font-face {
+  font-family: anislay;
+  src: url(../public/Ainsley\ Bold.ttf);
+}
+.anislay {
+  font-family: anislay;
+}
+
+@font-face {
+  font-family: koffin;
+  src: url(../public/Koffins.ttf);
+}
+.koffin {
+  font-family: koffin;
+}
+.clip-custom {
+  clip-path: polygon(20% 23%, 79% 19%, 79% 25%);
+}
+
+/* For tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .sectionTitle {
+    width: 200px;
+    height: 120px;
+    top: -80px;
+    left: -90px;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 40% 40%, 40% 100%, 0 100%);
+  }
+}
+
+/* For mobile devices (up to 767px) */
+@media (max-width: 767px) {
+  .sectionTitle {
+    width: 150px;
+    height: 100px;
+    top: -60px;
+    left: -70px;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 45%, 50% 100%, 0 100%);
+  }
+}

@@ -1,7 +1,5 @@
 import image from "../assets/footer.jpg";
 import Button from "./shared/Button";
-import Container from "./shared/Container";
-import SectionHead from "./shared/SectionHead";
 import SectionTitle from "./shared/SectionTitle";
 
 const About = () => {

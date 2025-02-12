@@ -24,10 +24,10 @@ const Footer = () => {
       <Container>
         <footer className="footer sm:footer-horizontal text-neutral-content p-10 flex flex-col md:flex-row justify-around">
           <aside>
-            <img className="w-28" src={logo} alt="Sorer Tori" />
+            <img className="w-28" src={logo} alt="Surer Tori " />
             <p>
               <span className="text-3xl font-bold text-[#d2ab69]">
-                Sorer Tori
+                Surer Tori
               </span>
               <br />
               Providing reliable service since 2005
@@ -47,35 +47,39 @@ const Footer = () => {
                 <div className="flex items-center gap-2">
                   <FaWhatsapp className="text-base text-[#927138]" />
                   <a
-                    href="https://wa.me/number"
+                    href="https://wa.me/+91 79807 86387"
                     // target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xl text-[#7f5c1f] hover:underline"
+                    className="text-xl text-[#7f5c1f] "
                   >
-                    +123 456 7890
+                    +91 79807 86387
                   </a>
                 </div>
 
                 <div className="flex items-center gap-2">
                   <FaEnvelope className="text-base text-[#927138]" />
                   <a
-                    href="mailto:sample@mail"
-                    className="text-xl text-[#7f5c1f] hover:underline"
+                    href="mailto:surertori.violin@gmail.com"
+                    className="text-xl text-[#7f5c1f] "
                   >
-                    info@example.com
+                    surertori.violin@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center gap-2">
                   <FaMapMarkerAlt className="text-base text-[#927138]" />
                   <span className="text-xl text-[#7f5c1f] ">
-                    123 Street, City, Country
+                    Belur , Howrah, India
                   </span>
                 </div>
               </div>
 
               {/* Social Media Links */}
               <div className="flex gap-5">
-                <a className="bg-[#9c2227] p-3 rounded-sm" href="/">
+                <a
+                  target="_blank"
+                  className="bg-[#9c2227] p-3 rounded-sm"
+                  href="https://www.facebook.com/profile.php?id=61557330762660"
+                >
                   <FaFacebook className="text-2xl text-[#D2AB69]" />
                 </a>
                 <a className="bg-[#9c2227] p-3 rounded-sm" href="/">
@@ -92,7 +96,8 @@ const Footer = () => {
         <div className="footer sm:footer-horizontal footer-center text-base-content p-4">
           <aside>
             <p>
-              Copyright © {new Date().getFullYear()} - All right reserved by{" "}
+              Copyright © {new Date().getFullYear()} - Surer Tori ⚙️ Debeloped
+              by{" "}
               <a href="/" className="font-semibold text-[#D2AB69]">
                 Abdur Razzak
               </a>
