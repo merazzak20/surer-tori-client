@@ -30,7 +30,9 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#d2ab69] ${isActive ? "text-[#d2ab69]" : "text-white"}`
+            `hover:text-[#d2ab69] hover:font-bold ${
+              isActive ? "text-[#d2ab69] font-bold" : "text-white"
+            }`
           }
           to="/"
         >
@@ -40,7 +42,9 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#d2ab69] ${isActive ? "text-[#d2ab69]" : "text-white"}`
+            `hover:text-[#d2ab69] hover:font-bold ${
+              isActive ? "text-[#d2ab69] font-bold" : "text-white"
+            }`
           }
           to="/about"
         >
@@ -50,7 +54,9 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#d2ab69] ${isActive ? "text-[#d2ab69]" : "text-white"}`
+            `hover:text-[#d2ab69] hover:font-bold ${
+              isActive ? "text-[#d2ab69] font-bold" : "text-white"
+            }`
           }
           to="/course"
         >
@@ -60,7 +66,9 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#d2ab69] ${isActive ? "text-[#d2ab69]" : "text-white"}`
+            `hover:text-[#d2ab69] hover:font-bold ${
+              isActive ? "text-[#d2ab69] font-bold" : "text-white"
+            }`
           }
           to="/theory"
         >
@@ -70,7 +78,9 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#d2ab69] ${isActive ? "text-[#d2ab69]" : "text-white"}`
+            `hover:text-[#d2ab69] hover:font-bold ${
+              isActive ? "text-[#d2ab69] font-bold" : "text-white"
+            }`
           }
           to="/student"
         >

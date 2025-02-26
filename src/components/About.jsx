@@ -4,10 +4,10 @@ import SectionTitle from "./shared/SectionTitle";
 
 const About = () => {
   return (
-    <div className="bg-white">
+    <div id="about" className="bg-white">
       <div className="flex flex-col md:flex-row items-center  py-6 md:py-12">
         {/* Image Section */}
-        <div className="relative w-full md:w-1/2">
+        <div className="relative hidden md:block w-full md:w-1/2">
           <img
             src={image}
             alt="Lisa Batiashvili"

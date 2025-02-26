@@ -1,0 +1,37 @@
+[
+  {
+    "image": "https://example.com/images/client1.jpg",
+    "name": "John Doe",
+    "title": "CEO, Tech Innovators",
+    "review": "Amazing service! The team was professional, and the results exceeded my expectations.",
+    "star": 5
+  },
+  {
+    "image": "https://example.com/images/client2.jpg",
+    "name": "Sarah Johnson",
+    "title": "Marketing Manager, Creative Solutions",
+    "review": "Great experience working with them. The website they developed is stunning and user-friendly.",
+    "star": 4.5
+  },
+  {
+    "image": "https://example.com/images/client3.jpg",
+    "name": "Michael Smith",
+    "title": "Founder, StartUp Hub",
+    "review": "Very responsive and delivered exactly what we needed. Highly recommend!",
+    "star": 5
+  },
+  {
+    "image": "https://example.com/images/client4.jpg",
+    "name": "Emily Davis",
+    "title": "Product Designer, UX Studio",
+    "review": "Loved the UI/UX design! It’s intuitive and visually appealing.",
+    "star": 4
+  },
+  {
+    "image": "https://example.com/images/client5.jpg",
+    "name": "David Brown",
+    "title": "Business Consultant",
+    "review": "Professional and efficient. Will definitely work with them again!",
+    "star": 4.5
+  }
+]

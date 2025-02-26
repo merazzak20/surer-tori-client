@@ -24,12 +24,12 @@
   /* display: none; */
   position: absolute;
   width: 280px;
-  height: 150px;
+  height: 200px;
   border: 3px solid #9c2227;
   top: -100px;
   left: -120px;
 
-  clip-path: polygon(0 0, 100% 0, 100% 50%, 30% 35%, 30% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 40%, 30% 35%, 30% 100%, 0 100%);
 }
 .sectionTitle::before {
   content: "";
@@ -39,6 +39,18 @@
   float: left;
 }
 
+/* dot color */
+.slick-dots li button:before {
+  color: #d2ab69 !important; /* Change dot color */
+  font-size: 12px !important;
+  opacity: 1 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #9c2227 !important; /* Active dot color */
+}
+
+/* custom fonts */
 @font-face {
   font-family: anislay;
   src: url(../public/Ainsley\ Bold.ttf);
@@ -62,20 +74,20 @@
 @media (max-width: 1024px) {
   .sectionTitle {
     width: 200px;
-    height: 120px;
-    top: -80px;
+    height: 220px;
+    top: -90px;
     left: -90px;
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 40% 40%, 40% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 40% 40%, 40% 100%, 0 100%);
   }
 }
 
 /* For mobile devices (up to 767px) */
 @media (max-width: 767px) {
   .sectionTitle {
-    width: 150px;
-    height: 100px;
-    top: -60px;
-    left: -70px;
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 45%, 50% 100%, 0 100%);
+    width: 120px;
+    height: 160px;
+    top: -40px;
+    left: -21px;
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 50% 45%, 10% 100%, 0 100%);
   }
 }
