@@ -98,7 +98,11 @@ const Footer = () => {
             <p>
               Copyright © {new Date().getFullYear()} - Surer Tori ⚙️ Debeloped
               by{" "}
-              <a href="/" className="font-semibold text-[#D2AB69]">
+              <a
+                href="https://www.linkedin.com/in/merazzak20/"
+                target="_blank"
+                className="font-semibold text-[#D2AB69]"
+              >
                 Abdur Razzak
               </a>
             </p>

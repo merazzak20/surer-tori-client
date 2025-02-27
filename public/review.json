@@ -1,34 +1,34 @@
 [
   {
-    "image": "https://example.com/images/client1.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVVGjBXZF4H8RiE1KIQh1suRdQNsxZY0E7Cg&s",
     "name": "John Doe",
     "title": "CEO, Tech Innovators",
     "review": "Amazing service! The team was professional, and the results exceeded my expectations.",
     "star": 5
   },
   {
-    "image": "https://example.com/images/client2.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVVGjBXZF4H8RiE1KIQh1suRdQNsxZY0E7Cg&s",
     "name": "Sarah Johnson",
     "title": "Marketing Manager, Creative Solutions",
     "review": "Great experience working with them. The website they developed is stunning and user-friendly.",
     "star": 4.5
   },
   {
-    "image": "https://example.com/images/client3.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVVGjBXZF4H8RiE1KIQh1suRdQNsxZY0E7Cg&s",
     "name": "Michael Smith",
     "title": "Founder, StartUp Hub",
     "review": "Very responsive and delivered exactly what we needed. Highly recommend!",
     "star": 5
   },
   {
-    "image": "https://example.com/images/client4.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVVGjBXZF4H8RiE1KIQh1suRdQNsxZY0E7Cg&s",
     "name": "Emily Davis",
     "title": "Product Designer, UX Studio",
     "review": "Loved the UI/UX design! It’s intuitive and visually appealing.",
     "star": 4
   },
   {
-    "image": "https://example.com/images/client5.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVVGjBXZF4H8RiE1KIQh1suRdQNsxZY0E7Cg&s",
     "name": "David Brown",
     "title": "Business Consultant",
     "review": "Professional and efficient. Will definitely work with them again!",

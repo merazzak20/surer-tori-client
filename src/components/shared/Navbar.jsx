@@ -170,8 +170,8 @@ const Navbar = () => {
     <header
       className={`fixed top-0 left-0 w-full z-40  transition-all duration-300 ${
         isScrolled
-          ? "bg-[#140505] bg-gradient-to-b from-[#140505] to-[#140505]/0 shadow-lg"
-          : "bg-gradient-to-b from-[#140505] to-[#140505]/80"
+          ? "bg-[#140505] bg-gradient-to-b from-[#140505] to-[#140505]/0 shadow-lg backdrop-blur-lg bg-opacity-10"
+          : "bg-gradient-to-b from-[#140505] to-[#140505]/0"
       }`}
     >
       <Container>
