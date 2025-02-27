@@ -219,13 +219,13 @@ const Header = () => {
           {/* Download Resume Button */}
           <div className="navbar-end flex flex-row">
             <div className="hidden md:inline-block">
-              {/* <div className="">
-                <ul className="menu menu-horizontal px-1">{links}</ul>
-              </div> */}
+              <div className="">
+                <ul className="menu menu-horizontal px-1">{socialIcons}</ul>
+              </div>
             </div>
 
             <div className="md:hidden">
-              <Hamburger toggled={isOpen} toggle={setIsOpen} color="#B9FF00" />
+              <Hamburger toggled={isOpen} toggle={setIsOpen} color="#d2ab69" />
             </div>
           </div>
 
@@ -236,12 +236,12 @@ const Header = () => {
               animate={{ y: 0 }} // Slide into view (left)
               exit={{ y: "-100%" }} // Slide out to the right when closing
               transition={{ type: "tween", duration: 0.3 }}
-              className="fixed inset-0 bg-zinc-900 bg-opacity-50 backdrop-blur-lg flex flex-col items-center justify-center text-white text-2xl z-50"
+              className="fixed inset-0 bg-[#0f0404] bg-opacity-50 backdrop-blur-lg flex flex-col items-center justify-center text-white text-2xl z-50"
             >
               {/* Close Button */}
               <button
                 onClick={() => setIsOpen(false)}
-                className="absolute top-5 right-5 text-white hover:text-[#B9FF00]"
+                className="absolute top-5 right-5 text-white hover:text-[#d2ab69]"
               >
                 <X size={40} />
               </button>
