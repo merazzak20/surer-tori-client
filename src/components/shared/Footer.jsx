@@ -95,8 +95,8 @@ const Footer = () => {
         <div className="divider bg-[#938368] h-[1px]"></div>
         <div className="footer sm:footer-horizontal footer-center text-base-content p-4">
           <aside>
-            <p>
-              Copyright © {new Date().getFullYear()} - Surer Tori ⚙️ Debeloped
+            <p className="text-white">
+              Copyright © {new Date().getFullYear()} - Surer Tori ⚙️ Developed
               by{" "}
               <a
                 href="https://www.linkedin.com/in/merazzak20/"

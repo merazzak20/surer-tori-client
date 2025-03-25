@@ -30,8 +30,8 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#d2ab69] hover:font-bold ${
-              isActive ? "text-[#d2ab69] font-bold" : "text-white"
+            `hover:text-[#9c2227] hover:font-bold ${
+              isActive ? "text-[#9c2227] font-bold" : "text-white"
             }`
           }
           to="/"
@@ -42,8 +42,8 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#d2ab69] hover:font-bold ${
-              isActive ? "text-[#d2ab69] font-bold" : "text-white"
+            `hover:text-[#9c2227] hover:font-bold ${
+              isActive ? "text-[#9c2227] font-bold" : "text-white"
             }`
           }
           to="/about"
@@ -54,8 +54,8 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#d2ab69] hover:font-bold ${
-              isActive ? "text-[#d2ab69] font-bold" : "text-white"
+            `hover:text-[#9c2227] hover:font-bold ${
+              isActive ? "text-[#9c2227] font-bold" : "text-white"
             }`
           }
           to="/course"
@@ -66,8 +66,8 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#d2ab69] hover:font-bold ${
-              isActive ? "text-[#d2ab69] font-bold" : "text-white"
+            `hover:text-[#9c2227] hover:font-bold ${
+              isActive ? "text-[#9c2227] font-bold" : "text-white"
             }`
           }
           to="/theory"
@@ -78,8 +78,8 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#d2ab69] hover:font-bold ${
-              isActive ? "text-[#d2ab69] font-bold" : "text-white"
+            `hover:text-[#9c2227] hover:font-bold ${
+              isActive ? "text-[#9c2227] font-bold" : "text-white"
             }`
           }
           to="/student"
@@ -97,13 +97,13 @@ const Navbar = () => {
         // className="bg-[#9c2227] p-3 rounded-sm"
         href="https://www.facebook.com/profile.php?id=61557330762660"
       >
-        <FaFacebook className="text-2xl text-[#D2AB69]" />
+        <FaFacebook className="text-2xl text-[#9c2227]" />
       </a>
       <a href="/">
-        <FaInstagram className="text-2xl text-[#D2AB69]" />
+        <FaInstagram className="text-2xl text-[#9c2227]" />
       </a>
       <a href="/">
-        <FaWhatsapp className="text-2xl text-[#D2AB69]" />
+        <FaWhatsapp className="text-2xl text-[#9c2227]" />
       </a>
 
       {/* <li>
@@ -116,7 +116,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#d2ab69] ${isActive ? "text-[#d2ab69]" : "text-white"}`
+            `hover:text-[#9c2227] ${isActive ? "text-[#9c2227]" : "text-white"}`
           }
           to="/"
         >
@@ -126,7 +126,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#d2ab69] ${isActive ? "text-[#d2ab69]" : "text-white"}`
+            `hover:text-[#9c2227] ${isActive ? "text-[#9c2227]" : "text-white"}`
           }
           to="/about"
         >
@@ -136,7 +136,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#d2ab69] ${isActive ? "text-[#d2ab69]" : "text-white"}`
+            `hover:text-[#9c2227] ${isActive ? "text-[#9c2227]" : "text-white"}`
           }
           to="/course"
         >
@@ -146,7 +146,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#d2ab69] ${isActive ? "text-[#d2ab69]" : "text-white"}`
+            `hover:text-[#9c2227] ${isActive ? "text-[#9c2227]" : "text-white"}`
           }
           to="/theory"
         >
@@ -156,7 +156,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#d2ab69] ${isActive ? "text-[#d2ab69]" : "text-white"}`
+            `hover:text-[#9c2227] ${isActive ? "text-[#9c2227]" : "text-white"}`
           }
           to="/student"
         >

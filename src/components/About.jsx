@@ -1,25 +1,29 @@
-import image from "../assets/footer.jpg";
+import image from "../assets/left-about.jpg";
 import Button from "./shared/Button";
+import SectionHead from "./shared/SectionHead";
 import SectionTitle from "./shared/SectionTitle";
 
 const About = () => {
   return (
     <div id="about" className="bg-white">
-      <div className="flex flex-col md:flex-row items-center  py-6 md:py-12">
+      <div className="flex flex-col md:flex-row items-center py-6 md:py-12">
         {/* Image Section */}
-        <div className="relative hidden md:block w-full md:w-1/2">
+        <div className="relative hidden md:block w-full h-[80vh] md:w-1/2 mt-26">
           <img
             src={image}
             alt="Lisa Batiashvili"
-            className="w-full rounded-none"
+            className="w-full h-[90%] object-cover rounded-none"
           />
         </div>
 
         {/* Text Section */}
-        <div className="w-full md:w-1/2 p-6 md:p-12 relative">
+        <div className="w-full md:w-1/2 p-6 md:p-12 relative -mt-22">
           {/* Decorative Borders using before */}
-          <div>
+          {/* <div>
             <SectionTitle head={"About Us"}></SectionTitle>
+          </div> */}
+          <div>
+            <SectionHead head={"About Us"}></SectionHead>
           </div>
           <div className="">
             <p className="mt-4 text-gray-700">

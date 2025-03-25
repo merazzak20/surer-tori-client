@@ -2,9 +2,9 @@
 const SectionTitle = ({ head }) => {
   return (
     <div className="relative">
-      <h2 className="inline-block text-4xl md:text-3xl text-[#D2AB69] font-bold  koffin">
+      <h2 className="inline-block text-4xl md:text-4xl text-[#D2AB69] font-bold mutalis">
         {head}
-        <span className="sectionTitle"></span>
+        <span className="sectionTitle1"></span>
       </h2>
     </div>
   );

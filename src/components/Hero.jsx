@@ -33,7 +33,7 @@ const Hero = () => {
           }}
         >
           <Container>
-            <h1 className="absolute bottom-50">Hello</h1>
+            <h1 className="absolute bottom-50 text-white text-xl">Hello</h1>
           </Container>
         </SwiperSlide>
         <SwiperSlide
@@ -46,7 +46,7 @@ const Hero = () => {
           }}
         >
           <Container>
-            <h1 className="absolute bottom-50">Hello</h1>
+            <h1 className="absolute bottom-50 text-white text-xl">Hello</h1>
           </Container>
         </SwiperSlide>
         <SwiperSlide
@@ -59,7 +59,7 @@ const Hero = () => {
           }}
         >
           <Container>
-            <h1 className="absolute bottom-50">Hello</h1>
+            <h1 className="absolute bottom-50 text-white text-xl">Hello</h1>
           </Container>
         </SwiperSlide>
       </Swiper>
