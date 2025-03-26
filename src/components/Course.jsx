@@ -14,7 +14,7 @@ const Course = () => {
   }, []);
   console.log(course);
   return (
-    <div className="py-12 my-10">
+    <div id="course" className="py-12 mb-10">
       <div className="w-11/12 lg:w-10/12 mx-auto relative mb-12">
         <SectionTitle head={"Our Popular Courses"} />
         <p className="mt-4">

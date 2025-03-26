@@ -46,7 +46,7 @@ const Navbar = () => {
               isActive ? "text-[#9c2227] font-bold" : "text-white"
             }`
           }
-          to="/about"
+          to="#about"
         >
           About
         </NavLink>
@@ -58,7 +58,7 @@ const Navbar = () => {
               isActive ? "text-[#9c2227] font-bold" : "text-white"
             }`
           }
-          to="/course"
+          to="#course"
         >
           Course
         </NavLink>

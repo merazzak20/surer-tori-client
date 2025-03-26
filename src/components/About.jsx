@@ -6,7 +6,7 @@ import SectionTitle from "./shared/SectionTitle";
 const About = () => {
   return (
     <div id="about" className="bg-white">
-      <div className="flex flex-col md:flex-row items-center py-6 md:py-12">
+      <div className="flex flex-col md:flex-row items-center ">
         {/* Image Section */}
         <div className="relative hidden md:block w-full h-[80vh] md:w-1/2 mt-26">
           <img

@@ -79,7 +79,7 @@ const Header = () => {
               isActive ? "text-[#d2ab69] font-bold" : "text-white"
             }`
           }
-          to="/about"
+          to="#about"
         >
           About
         </NavLink>
@@ -91,7 +91,7 @@ const Header = () => {
               isActive ? "text-[#d2ab69] font-bold" : "text-white"
             }`
           }
-          to="/course"
+          to="#course"
         >
           Course
         </NavLink>
