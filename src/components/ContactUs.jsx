@@ -1,6 +1,30 @@
-import image from "../assets/footer.jpg";
+import { useRef } from "react";
+import image from "../assets/contact.jpg";
+import emailjs from "@emailjs/browser";
 
 const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log(form.current);
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAIL_JS_SERVICE_KEY,
+        import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <div
       id="contact"
@@ -21,17 +45,19 @@ const ContactUs = () => {
 
       {/* Right side with form */}
       <div className="w-full md:w-10/12 h-[450px] bg-gray-100 p-10">
-        <form className="space-y-6">
+        <form ref={form} onSubmit={sendEmail} className="space-y-6">
           {/* Email and Name */}
           <div className="flex gap-4">
             <input
               type="email"
+              name="email"
               placeholder="Enter your email address"
               className="input input-bordered w-1/2 rounded-none"
               required
             />
             <input
               type="text"
+              name="name"
               placeholder="Enter your Name"
               className="input input-bordered w-1/2 rounded-none"
               required
@@ -41,6 +67,7 @@ const ContactUs = () => {
           {/* Date */}
           <input
             type="number"
+            name="number"
             placeholder="Phone number"
             className="input input-bordered w-full rounded-none"
             required
@@ -49,12 +76,13 @@ const ContactUs = () => {
           {/* Message */}
           <textarea
             placeholder="Enter your message"
+            name="message"
             className="textarea textarea-bordered w-full h-32 rounded-none"
             required
           ></textarea>
 
           {/* Submit Button */}
-          <button className="btn btn-neutral rounded-none w-full">
+          <button className="btn bg-[#D2AB69] rounded-none w-full">
             Submit
           </button>
         </form>

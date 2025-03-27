@@ -12,18 +12,9 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  //   useEffect(() => {
-  //     const handleScroll = () => {
-  //       if (window.scrollY > 80) {
-  //         setIsScrolled(true);
-  //       } else {
-  //         setIsScrolled(false);
-  //       }
-  //     };
-
-  //     window.addEventListener("scroll", handleScroll);
-  //     return () => window.removeEventListener("scroll", handleScroll);
-  //   }, []);
+  const handleScrollToSection = (sectionId) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -74,12 +65,12 @@ const Header = () => {
       </li>
       <li>
         <NavLink
-          className={({ isActive }) =>
-            `hover:text-[#d2ab69] hover:font-bold ${
-              isActive ? "text-[#d2ab69] font-bold" : "text-white"
-            }`
-          }
-          to="#about"
+          to="/"
+          className={`hover:text-[#d2ab69] hover:font-bold text-white`}
+          onClick={(e) => {
+            e.preventDefault();
+            handleScrollToSection("about");
+          }}
         >
           About
         </NavLink>
@@ -91,7 +82,7 @@ const Header = () => {
               isActive ? "text-[#d2ab69] font-bold" : "text-white"
             }`
           }
-          to="#course"
+          to="/course"
         >
           Course
         </NavLink>

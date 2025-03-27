@@ -1,7 +1,8 @@
+import { Link } from "react-router";
 import image from "../assets/left-about.jpg";
 import Button from "./shared/Button";
 import SectionHead from "./shared/SectionHead";
-import SectionTitle from "./shared/SectionTitle";
+// import SectionTitle from "./shared/SectionTitle";
 
 const About = () => {
   return (
@@ -33,9 +34,11 @@ const About = () => {
               relationships with the world’s leading orchestras, conductors, and
               musicians.
             </p>
-            <div className="my-4">
-              <Button buttonText={"Learn More"}></Button>
-            </div>
+            <Link to="/about">
+              <div className="my-4">
+                <Button buttonText={"Learn More"}></Button>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
