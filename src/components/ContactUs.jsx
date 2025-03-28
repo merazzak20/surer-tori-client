@@ -87,7 +87,12 @@ const ContactUs = () => {
           ></textarea>
 
           {/* Submit Button */}
-          <button className="btn bg-[#D2AB69] rounded-none w-full">
+          <button
+            className={`btn bg-[#D2AB69] rounded-none w-full ${
+              pending ? "disabled" : ""
+            } `}
+            disabled={pending}
+          >
             {pending ? (
               <span className="loading loading-spinner loading-md"></span>
             ) : (
