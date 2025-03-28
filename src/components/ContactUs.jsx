@@ -1,13 +1,16 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import image from "../assets/contact.jpg";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 const ContactUs = () => {
   const form = useRef();
+  const [pending, setPending] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
     console.log(form.current);
+    setPending(true);
 
     emailjs
       .sendForm(
@@ -19,6 +22,8 @@ const ContactUs = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          toast.success("Success! 👍");
+          setPending(false);
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -83,7 +88,11 @@ const ContactUs = () => {
 
           {/* Submit Button */}
           <button className="btn bg-[#D2AB69] rounded-none w-full">
-            Submit
+            {pending ? (
+              <span className="loading loading-spinner loading-md"></span>
+            ) : (
+              "Send"
+            )}
           </button>
         </form>
       </div>
