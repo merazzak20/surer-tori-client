@@ -68,9 +68,10 @@ const Testimonial = () => {
                   </div>
                 </div>
                 <p className="mt-2 text-gray-500">
-                  {review?.review && review.review.length > 100
+                  {/* {review?.review && review.review.length > 100
                     ? `${review.review.slice(0, 100)}...`
-                    : review?.review}
+                    : review?.review} */}
+                  {review?.review}
                 </p>
                 {/* <p>{review.review}</p> */}
 

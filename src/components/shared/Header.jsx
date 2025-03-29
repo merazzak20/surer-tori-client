@@ -122,10 +122,10 @@ const Header = () => {
       >
         <FaFacebook className="text-2xl text-[#D2AB69]" />
       </a>
-      <a href="/">
+      <a href="https://www.instagram.com/surer.tori?utm_source=qr&igsh=MXRtdjNsY3R2NGJlOA==">
         <FaInstagram className="text-2xl text-[#D2AB69]" />
       </a>
-      <a href="/">
+      <a href="https://wa.me/+91 79807 86387">
         <FaWhatsapp className="text-2xl text-[#D2AB69]" />
       </a>
 

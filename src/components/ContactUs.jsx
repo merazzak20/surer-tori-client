@@ -9,7 +9,7 @@ const ContactUs = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form.current);
+    const name = form.current["name"].value;
     setPending(true);
 
     emailjs
@@ -22,7 +22,7 @@ const ContactUs = () => {
       .then(
         () => {
           console.log("SUCCESS!");
-          toast.success("Success! 👍");
+          toast.success(`Thanks, ${name}! We’ve received your message.👍`);
           setPending(false);
         },
         (error) => {
@@ -88,7 +88,7 @@ const ContactUs = () => {
 
           {/* Submit Button */}
           <button
-            className={`btn bg-[#D2AB69] rounded-none w-full ${
+            className={`btn bg-[#D2AB69] border-none shadow-none rounded-none w-full ${
               pending ? "disabled" : ""
             } `}
             disabled={pending}

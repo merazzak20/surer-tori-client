@@ -1,17 +1,39 @@
 import { useState } from "react";
 import Container from "../../../components/shared/Container";
 import SectionTitle from "../../../components/shared/SectionTitle";
+import useAxiosPublic from "../../../hooks/useAxiosPublic";
+
+const image_hosting_key = import.meta.env.VITE_IMAGE_BB_HOSTING_KEY;
+const image_upload_key = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
 
 const UserFeedbackForm = () => {
+  const axiosPublic = useAxiosPublic();
   const [formData, setFormData] = useState({ name: "", title: "", review: "" });
   const { name, title, review } = formData;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.target;
     const rating = form["rating-2"].value;
-    const img = form.image.value;
-    console.log(name, title, review, rating, img);
+    const imageFile = form.image.files[0];
+
+    const formData = new FormData();
+    formData.append("image", imageFile);
+
+    try {
+      const { data } = await axiosPublic.post(image_upload_key, formData);
+      const imageUrl = data.data.url;
+      const feedInfo = {
+        name,
+        title,
+        review,
+        star: rating,
+        image: imageUrl,
+      };
+      console.log(feedInfo);
+    } catch (err) {
+      console.log(err);
+    }
   };
   return (
     <div>
@@ -26,10 +48,7 @@ const UserFeedbackForm = () => {
             <div className="space-y-6">
               {/* Name */}
               <div>
-                <label
-                  htmlFor="name"
-                  className="block text-lg font-medium text-zinc-700"
-                >
+                <label htmlFor="name" className="block text-lg font-medium ">
                   Name
                 </label>
                 <input
@@ -41,17 +60,14 @@ const UserFeedbackForm = () => {
                   }
                   value={formData.name}
                   placeholder="Enter your name"
-                  className="w-full px-4 py-2 border text-zinc-700 border-gray-300 rounded-none focus:outline-none"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-none focus:outline-none"
                   required
                 />
               </div>
 
               {/* Title */}
               <div>
-                <label
-                  htmlFor="title"
-                  className="block text-lg font-medium text-zinc-700"
-                >
+                <label htmlFor="title" className="block text-lg font-medium ">
                   Designation with Organization
                 </label>
                 <input
@@ -70,10 +86,7 @@ const UserFeedbackForm = () => {
 
               {/* Review */}
               <div>
-                <label
-                  htmlFor="review"
-                  className="block text-lg font-medium text-zinc-700"
-                >
+                <label htmlFor="review" className="block text-lg font-medium">
                   Review
                 </label>
                 <textarea
@@ -84,7 +97,7 @@ const UserFeedbackForm = () => {
                     setFormData({ ...formData, review: e.target.value })
                   }
                   value={formData.review}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-none text-zinc-700 focus:outline-none"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-none  focus:outline-none"
                   rows="4"
                   required
                 ></textarea>
@@ -95,10 +108,7 @@ const UserFeedbackForm = () => {
             <div className="space-y-6">
               {/* Image */}
               <div>
-                <label
-                  className="block font-medium mb-2 text-zinc-700"
-                  htmlFor="image"
-                >
+                <label className="block font-medium mb-2" htmlFor="image">
                   Image
                 </label>
                 <input
@@ -112,9 +122,7 @@ const UserFeedbackForm = () => {
 
               {/* Rating */}
               <div>
-                <label className="block text-lg font-medium text-zinc-700">
-                  Rating
-                </label>
+                <label className="block text-lg font-medium">Rating</label>
                 <div className="flex items-center space-x-2">
                   <div className="rating">
                     <input
@@ -156,7 +164,7 @@ const UserFeedbackForm = () => {
               <div>
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 font-semibold text-zinc-800 bg-[#d2ab69] focus:bg-[#a0804a] rounded-none hover:bg-[#b09970] focus:outline-none"
+                  className="w-full px-6 py-3 font-semibold text-zinc-800 bg-[#d2ab69] focus:bg-[#a0804a] rounded-none border-none hover:bg-[#b09970] focus:outline-none"
                 >
                   Submit Review
                 </button>
