@@ -22,6 +22,7 @@ const ContactUs = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          form.current.reset();
           toast.success(`Thanks, ${name}! We’ve received your message.👍`);
           setPending(false);
         },

@@ -6,7 +6,7 @@ import SectionHead from "./shared/SectionHead";
 
 const About = () => {
   return (
-    <div id="about" className="bg-white sm:pt-52 md:pt-0">
+    <div id="about" className="bg-white pt-52 md:pt-0">
       <div className="flex flex-col md:flex-row items-center ">
         {/* Image Section */}
         <div className="relative hidden md:block w-full h-[80vh] md:w-1/2 mt-26">

@@ -58,6 +58,7 @@ const Header = () => {
               isActive ? "text-[#9c2227] font-bold" : "text-white"
             }`
           }
+          // onClick={() => setIsOpen(false)}
           to="/"
         >
           Home
@@ -70,6 +71,7 @@ const Header = () => {
           onClick={(e) => {
             e.preventDefault();
             handleScrollToSection("about");
+            // setIsOpen(false);
           }}
         >
           About
@@ -142,6 +144,7 @@ const Header = () => {
             `hover:text-[#d2ab69] ${isActive ? "text-[#d2ab69]" : "text-white"}`
           }
           to="/"
+          onClick={() => setIsOpen(false)}
         >
           Home
         </NavLink>
@@ -152,6 +155,7 @@ const Header = () => {
             `hover:text-[#d2ab69] ${isActive ? "text-[#d2ab69]" : "text-white"}`
           }
           to="/about"
+          onClick={() => setIsOpen(false)}
         >
           About
         </NavLink>
