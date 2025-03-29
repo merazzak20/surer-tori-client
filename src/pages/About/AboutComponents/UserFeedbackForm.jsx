@@ -2,17 +2,20 @@ import { useState } from "react";
 import Container from "../../../components/shared/Container";
 import SectionTitle from "../../../components/shared/SectionTitle";
 import useAxiosPublic from "../../../hooks/useAxiosPublic";
+import toast from "react-hot-toast";
 
 const image_hosting_key = import.meta.env.VITE_IMAGE_BB_HOSTING_KEY;
 const image_upload_key = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
 
 const UserFeedbackForm = () => {
   const axiosPublic = useAxiosPublic();
+  const [pending, setPending] = useState(false);
   const [formData, setFormData] = useState({ name: "", title: "", review: "" });
   const { name, title, review } = formData;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setPending(true);
     const form = e.target;
     const rating = form["rating-2"].value;
     const imageFile = form.image.files[0];
@@ -30,9 +33,15 @@ const UserFeedbackForm = () => {
         star: rating,
         image: imageUrl,
       };
-      console.log(feedInfo);
+      await axiosPublic.post("/feedback", feedInfo);
+      setFormData({ name: "", title: "", review: "" });
+      form.reset();
+      toast.success("Your feedback successfully submited!❤️");
+      setPending(false);
+      // console.log(feedInfo);
     } catch (err) {
       console.log(err);
+      toast.error(err);
     }
   };
   return (
@@ -164,9 +173,16 @@ const UserFeedbackForm = () => {
               <div>
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 font-semibold text-zinc-800 bg-[#d2ab69] focus:bg-[#a0804a] rounded-none border-none hover:bg-[#b09970] focus:outline-none"
+                  className={`w-full px-6 cursor-pointer py-3 font-semibold text-zinc-800 bg-[#d2ab69] focus:bg-[#a0804a] rounded-none border-none hover:bg-[#b09970] focus:outline-none ${
+                    pending ? "disabled" : ""
+                  }`}
+                  disabled={pending}
                 >
-                  Submit Review
+                  {pending ? (
+                    <span className="loading loading-spinner loading-md"></span>
+                  ) : (
+                    "Submit Review"
+                  )}
                 </button>
               </div>
             </div>

@@ -2,17 +2,30 @@ import Container from "./shared/Container";
 import SectionTitle from "./shared/SectionTitle";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import Slider from "react-slick";
+import useAxiosPublic from "../hooks/useAxiosPublic";
+import { useQuery } from "@tanstack/react-query";
 
 const Testimonial = () => {
-  const [reviews, setReviews] = useState([]); // Initialize as an empty array
+  // useEffect(() => {
+  //   fetch("/review.json") // Ensure the correct path
+  //     .then((res) => res.json())
+  //     .then((data) => setReviews(data));
+  // }, []);
 
-  useEffect(() => {
-    fetch("/review.json") // Ensure the correct path
-      .then((res) => res.json())
-      .then((data) => setReviews(data));
-  }, []);
+  const axiosPublic = useAxiosPublic();
+  const { data: feedbacks, isLoading } = useQuery({
+    queryKey: ["feedbacks"],
+    queryFn: async () => {
+      const { data } = await axiosPublic.get("/feedback");
+      return data;
+    },
+  });
+  if (isLoading)
+    return (
+      <span className="loading loading-spinner loading-md text-[#9C2227]"></span>
+    );
 
   const settings = {
     dots: false,
@@ -51,7 +64,7 @@ const Testimonial = () => {
       <Container>
         <div className="px-2">
           <Slider {...settings}>
-            {reviews.map((review, idx) => (
+            {feedbacks.map((review, idx) => (
               <div
                 key={idx}
                 className="flex flex-col items-center  p-6 rounded-md shadow-none lg:shadow-md bg-gray-50/0 space-x-4"
@@ -80,7 +93,9 @@ const Testimonial = () => {
                     <span
                       key={i}
                       className={`text-yellow-500 ${
-                        i < review.star ? "opacity-100" : "opacity-30"
+                        i < Number(review.star || 0)
+                          ? "opacity-100"
+                          : "opacity-30"
                       }`}
                     >
                       ★
