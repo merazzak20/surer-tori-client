@@ -2,13 +2,8 @@ import Container from "./shared/Container";
 import videoSrc from "../assets/video.mp4";
 import { FaPlayCircle } from "react-icons/fa";
 import { Link } from "react-router";
-import { useState } from "react";
 
 const Video = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const closeModal = () => setIsOpen(false);
-  const openModal = () => setIsOpen(true);
   return (
     <div
       style={{
@@ -88,13 +83,5 @@ const Video = () => {
     </div>
   );
 };
-{
-  /* <button
-  className="btn"
-  onClick={() => document.getElementById("my_modal_2").showModal()}
->
-  open modal
-</button>; */
-}
 
 export default Video;

@@ -54,11 +54,11 @@ const Course = () => {
                   {cr?.description?.slice(0, 80)}...
                 </p>
               </div>
-              <div className="flex justify-between items-center mt-4">
+              {/* <div className="flex justify-between items-center mt-4">
                 <span className="text-xl font-semibold text-[#D2AB69]">
                   ${cr.price}
                 </span>
-              </div>
+              </div> */}
               {/* <div className="mt-3 flex justify-between items-center">
                 <span className="text-gray-600 text-sm">
                   ⭐ {cr.rating} / 5
