@@ -2,8 +2,13 @@ import Container from "./shared/Container";
 import videoSrc from "../assets/video.mp4";
 import { FaPlayCircle } from "react-icons/fa";
 import { Link } from "react-router";
+import { useState } from "react";
 
 const Video = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const closeModal = () => setIsOpen(false);
+  const openModal = () => setIsOpen(true);
   return (
     <div
       style={{
@@ -46,7 +51,10 @@ const Video = () => {
         }}
       >
         <Container>
-          <Link className="hover:text-[#D2AB69]">
+          <Link
+            onClick={() => document.getElementById("my_modal_4").showModal()}
+            className="hover:text-[#D2AB69]"
+          >
             <div className="flex gap-2 items-center text-2xl">
               <h1>Play Video</h1>
               <span>
@@ -56,8 +64,37 @@ const Video = () => {
           </Link>
         </Container>
       </div>
+      <dialog id="my_modal_4" className="modal">
+        <div className="modal-box w-11/12 max-w-5xl">
+          <video controls autoPlay className="w-full h-auto">
+            <source src={videoSrc} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          {/* for youtube video */}
+          {/* <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/4jKkT3d8gdI?si=8UsUkRip23BEHOME"
+              title="YouTube video"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            ></iframe> */}
+        </div>
+        <form method="dialog" className="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
     </div>
   );
 };
+{
+  /* <button
+  className="btn"
+  onClick={() => document.getElementById("my_modal_2").showModal()}
+>
+  open modal
+</button>; */
+}
 
 export default Video;
