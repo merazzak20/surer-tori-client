@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import SectionTitle from "./shared/SectionTitle";
 import Container from "./shared/Container";
-import { FaChalkboardTeacher } from "react-icons/fa";
 import { PiChalkboardTeacherBold } from "react-icons/pi";
 
 const Course = () => {

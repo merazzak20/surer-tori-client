@@ -1,5 +1,6 @@
 import UserFeedbackForm from "../About/AboutComponents/UserFeedbackForm";
 import about from "../../assets/left-about.jpg";
+import Founder from "./AboutComponents/Founder";
 const AboutPage = () => {
   return (
     <div className="">
@@ -17,6 +18,7 @@ const AboutPage = () => {
           About Page
         </h1>
       </div>
+      <Founder></Founder>
       <UserFeedbackForm></UserFeedbackForm>
     </div>
   );

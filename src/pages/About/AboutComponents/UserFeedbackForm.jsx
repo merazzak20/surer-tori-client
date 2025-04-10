@@ -45,7 +45,7 @@ const UserFeedbackForm = () => {
     }
   };
   return (
-    <div>
+    <div className="my-4">
       <Container>
         <SectionTitle head={"User Valuable Feedback"}></SectionTitle>
         <div className="my-4">
