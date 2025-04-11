@@ -6,9 +6,9 @@ const Founder = () => {
   return (
     <div className="my-10">
       <Container>
-        <div className="flex justify-between items-center gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* left */}
-          <div className="left-side max-w-5/12">
+          <div className="left-side w-full md:w-5/12">
             <div className="w-full max-h-[70vh] rounded-xl overflow-hidden">
               <img
                 className="w-full h-full object-contain"
@@ -19,10 +19,10 @@ const Founder = () => {
           </div>
 
           {/* right */}
-          <div className="right-side max-w-7/12 text-left">
+          <div className="right-side w-full md:w-7/12 text-left">
             <div className="space-y-1 mb-3">
               <h2 className="text-4xl font-bold text-[#D2AB69]">
-                Lorem ipsum dolor
+                Deviprasad Mallick
               </h2>
               <h4 className="text-base font-medium text-[#D2AB69]">
                 Founder, Surer Tori
