@@ -14,12 +14,11 @@ const Course = () => {
   console.log(course);
   return (
     <div id="course" className="py-12 mb-10">
-      <div className="w-11/12 lg:w-10/12 mx-auto relative mb-12">
+      <div className="w-11/12 lg:w-10/12 mx-auto relative mb-6">
         <SectionTitle head={"Our Popular Courses"} />
         <p className="mt-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi itaque
-          maxime voluptate vero facere obcaecati, quia aliquam. Quos, unde
-          voluptate.
+          At Surer Tori, we offer three specially designed violin courses to
+          match every stage of your musical journey.
         </p>
       </div>
       <Container>
@@ -27,13 +26,13 @@ const Course = () => {
           {course.map((cr) => (
             <div
               key={cr.id}
-              className="rounded-2xl  transition-transform transform p-5  "
+              className="rounded-2xl transition-transform transform p-5  "
             >
               <figure className="relative overflow-hidden">
                 <img
                   src={cr?.image}
                   alt={cr.title}
-                  className="w-full h-50 object-cover rounded-lg hover:scale-110 hover:rotate-2 transition-all duration-300"
+                  className="w-full  object-contain rounded-lg hover:scale-110 hover:rotate-2 transition-all duration-300"
                 />
               </figure>
               <div className="mt-4">
@@ -66,6 +65,9 @@ const Course = () => {
                   Enroll Now
                 </button>
               </div> */}
+              <button className="mt-3 btn-sm bg-[#D2AB69] text-white text-md font-semibold px-4 py-2 rounded-sm cursor-pointer hover:bg-[#c7a66d] transition">
+                Explore Now
+              </button>
             </div>
           ))}
         </div>
