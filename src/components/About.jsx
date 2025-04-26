@@ -13,7 +13,7 @@ const About = () => {
           <img
             src={image}
             alt="Lisa Batiashvili"
-            className="w-full h-[90%] object-cover rounded-none"
+            className="w-full h-[75%] object-cover rounded-none"
           />
         </div>
 
@@ -27,16 +27,26 @@ const About = () => {
             <SectionHead head={"About Us"}></SectionHead>
           </div>
           <div className="">
-            <p className="mt-4 text-gray-700">
-              Lisa Batiashvili, the Georgian-born German violinist, is praised
-              by audiences and fellow musicians for her virtuosity. An
-              award-winning artist, she has developed long-standing
-              relationships with the world’s leading orchestras, conductors, and
-              musicians.
+            <p className="mt-4 text-gray-700 text-justify">
+              Welcome to Surer Tori, a place where the timeless beauty of violin
+              music comes alive. Founded in the heart of Belur, Kolkata, our
+              school is dedicated to nurturing a deep love for music through the
+              elegance of the violin.
+            </p>
+            <p className="mt-4 text-gray-700 text-justify">
+              At Surer Tori, we believe that music is not just an art — it's a
+              journey of the soul. Whether you are a beginner taking your first
+              steps or an advanced student refining your craft, our experienced
+              instructors offer personalized training to help you grow with
+              confidence and joy.
+            </p>
+            <p className="mt-4 text-gray-700 text-justify">
+              Come, be a part of the Surer Tori family — let's set sail on a
+              beautiful musical journey together!
             </p>
             <Link to="/about">
               <div className="my-4">
-                <Button buttonText={"Learn More"}></Button>
+                <Button buttonText={"Read More"}></Button>
               </div>
             </Link>
           </div>

@@ -54,9 +54,9 @@ const Header = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#9c2227] hover:font-bold ${
+            `hover:text-[#D2AB69] hover:font-bold ${
               isActive
-                ? "text-[#9c2227] font-bold active-link"
+                ? "text-[#D2AB69] font-bold active-link"
                 : "text-white nav-link"
             }`
           }
@@ -69,7 +69,7 @@ const Header = () => {
       <li>
         <NavLink
           to="/"
-          className={`nav-link hover:font-bold text-white hover:text-[#9c2227] `}
+          className={`nav-link hover:font-bold text-white hover:text-[#D2AB69] `}
           onClick={(e) => {
             e.preventDefault();
             handleScrollToSection("about");
@@ -82,8 +82,8 @@ const Header = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#9c2227] hover:font-bold ${
-              isActive ? "text-[#9c2227]" : "text-white nav-link"
+            `hover:text-[#D2AB69] hover:font-bold ${
+              isActive ? "text-[#D2AB69]" : "text-white nav-link"
             }`
           }
           to="/course"
@@ -94,8 +94,8 @@ const Header = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#9c2227] hover:font-bold ${
-              isActive ? "text-[#9c2227]" : "text-white nav-link"
+            `hover:text-[#D2AB69] hover:font-bold ${
+              isActive ? "text-[#D2AB69]" : "text-white nav-link"
             }`
           }
           to="/theory"
@@ -106,8 +106,8 @@ const Header = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `hover:text-[#9c2227] hover:font-bold ${
-              isActive ? "text-[#9c2227]" : "text-white nav-link"
+            `hover:text-[#D2AB69] hover:font-bold ${
+              isActive ? "text-[#D2AB69]" : "text-white nav-link"
             }`
           }
           to="/student"

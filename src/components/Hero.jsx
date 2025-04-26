@@ -5,7 +5,10 @@ import "swiper/css/scrollbar";
 
 import { Scrollbar, Autoplay } from "swiper/modules";
 
-import h1 from "../assets/footer.jpg";
+import h1 from "../assets/hero1.jpg";
+import h2 from "../assets/hero2.jpg";
+import h3 from "../assets/hero3.jpg";
+import h4 from "../assets/hero4.jpg";
 import Container from "./shared/Container";
 
 const Hero = () => {
@@ -25,8 +28,50 @@ const Hero = () => {
       >
         <SwiperSlide
           style={{
-            backgroundImage: `linear-gradient(rgba(20, 5, 5, 0), rgba(20, 5, 5, 0.9)), url(${h1})`,
+            backgroundImage: `linear-gradient(rgba(20, 5, 5, 0.2), rgba(20, 5, 5, 0.9)), url(${h1})`,
             backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            minHeight: "100vh",
+          }}
+        >
+          <Container>
+            <div className="absolute bottom-20 max-w-7/12 text-white text-2xl tracking-wide font-semibold rusticRoadway">
+              <p>
+                "When you play a violin piece, you are a storyteller, and you're
+                telling a story." <br />
+                "A violin should be played with love, or not at all."
+              </p>
+              <p className="mt-4 ml-2">- Joseph Wechsberg</p>
+            </div>
+          </Container>
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            backgroundImage: `linear-gradient(rgba(20, 5, 5, 0), rgba(20, 5, 5, 0.5)), url(${h2})`,
+            backgroundPosition: "center top",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            minHeight: "100vh",
+          }}
+        >
+          <Container>
+            <div className="absolute max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold rusticRoadway">
+              <p>
+                If there are different musical instruments tuned alike in one
+                room, all of you may have noticed that when one is struck, the
+                others have the tendency to vibrate so as to give the same note.
+                So all minds that have the same tension, so to say, will be
+                equally affected by the same thought.
+              </p>
+              <p className="mt-4 ml-2">- Swami Vivekananda</p>
+            </div>
+          </Container>
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            backgroundImage: `linear-gradient(rgba(20, 5, 5, 0), rgba(20, 5, 5, 0.9)), url(${h3})`,
+            backgroundPosition: "center top",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             minHeight: "100vh",
@@ -38,7 +83,7 @@ const Hero = () => {
         </SwiperSlide>
         <SwiperSlide
           style={{
-            backgroundImage: `linear-gradient(rgba(20, 5, 5, 0), rgba(20, 5, 5, 0.9)), url(${h1})`,
+            backgroundImage: `linear-gradient(rgba(20, 5, 5, 0), rgba(20, 5, 5, 0.9)), url(${h4})`,
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -46,20 +91,9 @@ const Hero = () => {
           }}
         >
           <Container>
-            <h1 className="absolute bottom-50 text-white text-xl">Hello</h1>
-          </Container>
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage: `linear-gradient(rgba(20, 5, 5, 0), rgba(20, 5, 5, 0.9)), url(${h1})`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            minHeight: "100vh",
-          }}
-        >
-          <Container>
-            <h1 className="absolute bottom-50 text-white text-xl">Hello</h1>
+            <div className="absolute max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold rusticRoadway">
+              <p>Group Picnic Organized by Surer Tori.</p>
+            </div>
           </Container>
         </SwiperSlide>
       </Swiper>

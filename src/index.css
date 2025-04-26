@@ -20,8 +20,8 @@ html {
   bottom: -2px; /* slight space between text and line */
   left: 10px;
   width: 0%;
-  height: 1px;
-  background-color: #9c2227;
+  height: 2px;
+  background-color: #d2ab69;
   transition: width 0.3s ease;
 }
 
@@ -122,6 +122,14 @@ html {
 }
 .koffin {
   font-family: koffin;
+}
+
+@font-face {
+  font-family: rusticRoadway;
+  src: url(../public/RusticRoadway.otf);
+}
+.rusticRoadway {
+  font-family: rusticRoadway;
 }
 .clip-custom {
   clip-path: polygon(20% 23%, 79% 19%, 79% 25%);

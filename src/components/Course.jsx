@@ -42,7 +42,7 @@ const Course = () => {
                   <div className="flex items-center gap-2 mt-2">
                     <PiChalkboardTeacherBold className="text-xl" />
                     <p className="text-gray-600 text-md font-bold mt-1">
-                      {cr.instructor}
+                      By {cr.instructor}
                     </p>
                   </div>
                   <span className="bg-[#D2AB69] text-white text-xs px-2 py-1 rounded-lg font-semibold">

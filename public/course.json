@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "title": "Beginner Violin Mastery",
-    "instructor": "Emily Carter",
-    "image": "https://richardpryn.com/content/images/size/w1600/format/webp/2022/12/Violin-Range.jpg",
+    "title": "Beginners",
+    "instructor": "Deviprasad Mallick",
+    "image": "https://i.ibb.co.com/JRsJHtr7/a-heartwarming-soft-focus-portrait-photo-TCX-ji-J-TRm1mt-K8-B4-WZog-7-axy-Nie-Rs-GCz-G1u-A9-FR6-Q.jpg",
     "description": "Learn the fundamentals of playing the violin, including posture, bowing techniques, and basic notes.",
     "duration": "6 weeks",
     "price": 49.99,
@@ -12,8 +12,8 @@
   },
   {
     "id": 2,
-    "title": "Intermediate Violin Techniques",
-    "instructor": "David Reynolds",
+    "title": "Intermediate",
+    "instructor": "Deviprasad Mallick",
     "image": "https://richardpryn.com/content/images/size/w1600/format/webp/2022/12/Violin-Range.jpg",
     "description": "Enhance your violin skills with advanced bowing, vibrato, and music theory applications.",
     "duration": "8 weeks",
@@ -23,8 +23,8 @@
   },
   {
     "id": 3,
-    "title": "Violin Virtuoso: Advanced Performance",
-    "instructor": "Sophia Martinez",
+    "title": "Advance (Certified Course)",
+    "instructor": "Deviprasad Mallick",
     "image": "https://richardpryn.com/content/images/size/w1600/format/webp/2022/12/Violin-Range.jpg",
     "description": "Master complex violin techniques, improvisation, and stage performance skills.",
     "duration": "10 weeks",

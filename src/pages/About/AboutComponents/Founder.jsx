@@ -1,6 +1,6 @@
 import Container from "../../../components/shared/Container";
 import me from "../../../assets/me.jpg";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Founder = () => {
   return (
@@ -20,7 +20,7 @@ const Founder = () => {
 
           {/* right */}
           <div className="right-side w-full md:w-7/12 text-left">
-            <div className="space-y-1 mb-3">
+            <div className="space-y-1 mb-3 border-b border-[#9C2227] pb-2">
               <h2 className="text-4xl font-bold text-[#D2AB69]">
                 Deviprasad Mallick
               </h2>
@@ -30,45 +30,35 @@ const Founder = () => {
             </div>
             <div className="info">
               <p className="text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                eaque officia amet deserunt fugit similique corrupti quidem qui,
-                consequatur numquam ut aperiam repellat dolor reprehenderit
-                repudiandae nostrum vero voluptate quae animi? Distinctio
-                dolores cupiditate, laboriosam doloribus nam accusamus quo
-                tempore itaque voluptatum, quidem explicabo quis. Earum saepe
-                architecto sed dolor?
+                <strong>"SURER TORI"</strong> an institution to educate violin
+                in the proper way for students near & abroad. Formed and Guided
+                by Mr, DEBIPRASAD MALLICK. Born & brought up in a violin family.
+                Learned violin from his father, renowned violin teacher of
+                santipur Mr. Gopikanta mallick. Later perfected the art in
+                Indian classical music with the guidance of Guru Mr. Subir
+                Mukherjee. Mr, Bhaskar Sen. Mr, Tarun Chakraborty. Mr. Saket
+                Sahu. & in western Mr. Jyoti Shankar Roy. Mr Amitava Ghosh.. Now
+                searving as a violin teacher in renowned school - M. C. k. V.
               </p>
               <p className="text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                eaque officia amet deserunt fugit similique corrupti quidem qui,
-                consequatur numquam ut aperiam repellat dolor reprehenderit
-                repudiandae nostrum vero voluptate quae animi? Distinctio
-                dolores cupiditate, laboriosam doloribus nam accusamus quo
-                tempore itaque voluptatum, quidem explicabo quis. Earum saepe
-                architecto sed dolor?
+                Besides violin he has been learning ESRAJ with the guidance of
+                Guru Mr. Debayan Majumdaar.
               </p>
             </div>
             <div className=" space-x-2 mt-2">
               <a
-                href=""
+                href="https://www.facebook.com/debiprosad.mallick?rdid=H3zej4HGkU4h9sSV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F169GEVSzHr%2F#"
                 target="_blank"
                 className="btn bg-[#9C2227] border-none"
               >
                 <FaFacebook className="text-xl text-[#D2AB69]"></FaFacebook>
               </a>
               <a
-                href=""
+                href="https://www.instagram.com/debiprosad_mallick_violinist/?utm_source=qr&igsh=dzZmNW0ydXc4bDlh#"
                 target="_blank"
                 className="btn bg-[#9C2227] border-none"
               >
                 <FaInstagram className="text-xl text-[#D2AB69]"></FaInstagram>
-              </a>
-              <a
-                href=""
-                target="_blank"
-                className="btn bg-[#9C2227] border-none"
-              >
-                <FaLinkedin className="text-xl text-[#D2AB69]"></FaLinkedin>
               </a>
             </div>
           </div>

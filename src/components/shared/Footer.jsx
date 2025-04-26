@@ -95,17 +95,20 @@ const Footer = () => {
         <div className="divider bg-[#938368] h-[1px]"></div>
         <div className="footer sm:footer-horizontal footer-center text-base-content p-4">
           <aside>
-            <p className="text-white">
-              Copyright © {new Date().getFullYear()} - Surer Tori ⚙️ Developed
-              by{" "}
-              <a
-                href="https://www.linkedin.com/in/merazzak20/"
-                target="_blank"
-                className="font-semibold text-[#D2AB69]"
-              >
-                Abdur Razzak
-              </a>
-            </p>
+            <div className="text-white flex flex-col md:flex-row justify-between items-center gap-4">
+              <p>Copyright © {new Date().getFullYear()} - Surer Tori</p>
+              <p>
+                ⚙️ Developed by{" "}
+                <a
+                  href="https://www.linkedin.com/in/merazzak20/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[#D2AB69]"
+                >
+                  Abdur Razzak
+                </a>
+              </p>
+            </div>
           </aside>
         </div>
       </Container>
