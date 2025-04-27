@@ -36,7 +36,7 @@ const Hero = () => {
           }}
         >
           <Container>
-            <div className="absolute bottom-20 max-w-7/12 text-white text-2xl tracking-wide font-semibold rusticRoadway">
+            <div className="absolute bottom-20 max-w-[10/12] lg:max-w-7/12 text-white text-2xl tracking-wide font-semibold rusticRoadway">
               <p>
                 "When you play a violin piece, you are a storyteller, and you're
                 telling a story." <br />
@@ -56,7 +56,7 @@ const Hero = () => {
           }}
         >
           <Container>
-            <div className="absolute max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold rusticRoadway">
+            <div className="absolute max-w-[10/12] lg:max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold rusticRoadway">
               <p>
                 If there are different musical instruments tuned alike in one
                 room, all of you may have noticed that when one is struck, the
@@ -78,7 +78,9 @@ const Hero = () => {
           }}
         >
           <Container>
-            <h1 className="absolute bottom-50 text-white text-xl">Hello</h1>
+            <h1 className="absolute bottom-50 max-w-[10/12] lg:max-w-7/12 text-white text-xl">
+              Hello
+            </h1>
           </Container>
         </SwiperSlide>
         <SwiperSlide
@@ -91,7 +93,7 @@ const Hero = () => {
           }}
         >
           <Container>
-            <div className="absolute max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold rusticRoadway">
+            <div className="absolute max-w-[10/12] lg:max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold rusticRoadway">
               <p>Group Picnic Organized by Surer Tori.</p>
             </div>
           </Container>
