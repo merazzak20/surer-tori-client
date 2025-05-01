@@ -67,14 +67,24 @@ const Header = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink
-          to="/"
+        {/* <NavLink
+          to="/about"
           className={`nav-link hover:font-bold text-white hover:text-[#D2AB69] `}
           onClick={(e) => {
             e.preventDefault();
             handleScrollToSection("about");
             // setIsOpen(false);
           }}
+        >
+          About
+        </NavLink> */}
+        <NavLink
+          className={({ isActive }) =>
+            `hover:text-[#D2AB69] hover:font-bold ${
+              isActive ? "text-[#D2AB69]" : "text-white nav-link"
+            }`
+          }
+          to="/about"
         >
           About
         </NavLink>
@@ -86,9 +96,9 @@ const Header = () => {
               isActive ? "text-[#D2AB69]" : "text-white nav-link"
             }`
           }
-          to="/course"
+          to="/courses"
         >
-          Course
+          Courses
         </NavLink>
       </li>
       <li>
@@ -167,9 +177,9 @@ const Header = () => {
           className={({ isActive }) =>
             `hover:text-[#d2ab69] ${isActive ? "text-[#d2ab69]" : "text-white"}`
           }
-          to="/course"
+          to="/courses"
         >
-          Course
+          Courses
         </NavLink>
       </li>
       <li>

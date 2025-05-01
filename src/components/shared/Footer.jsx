@@ -82,7 +82,10 @@ const Footer = () => {
                 >
                   <FaFacebook className="text-2xl text-[#D2AB69]" />
                 </a>
-                <a className="bg-[#9c2227] p-3 rounded-sm" href="/">
+                <a
+                target="_blank"
+                 className="bg-[#9c2227] p-3 rounded-sm" 
+                 href="https://www.instagram.com/debiprosad_mallick_violinist?utm_source=qr&igsh=dzZmNW0ydXc4bDlh">
                   <FaInstagram className="text-2xl text-[#D2AB69]" />
                 </a>
                 <a className="bg-[#9c2227] p-3 rounded-sm" href="/">
