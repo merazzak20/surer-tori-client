@@ -145,13 +145,14 @@ const UserFeedbackForm = () => {
                       name="rating-2"
                       value="2"
                       className="mask mask-star-2 bg-[#9C2227]"
-                      defaultChecked
+                      
                     />
                     <input
                       type="radio"
                       name="rating-2"
                       value="3"
                       className="mask mask-star-2 bg-[#9C2227]"
+                      defaultChecked
                     />
                     <input
                       type="radio"

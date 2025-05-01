@@ -6,19 +6,19 @@ import SectionHead from "./shared/SectionHead";
 
 const About = () => {
   return (
-    <div id="about" className="bg-white pt-52 md:pt-0">
+    <div id="about" className="bg-white md:pt-0">
       <div className="flex flex-col md:flex-row items-center ">
         {/* Image Section */}
-        <div className="relative hidden md:block w-full h-[80vh] md:w-1/2 mt-26">
+        <div className="relative  md:block w-full h-[80vh] md:w-1/2 mt-5 md:mt-26">
           <img
             src={image}
-            alt="Lisa Batiashvili"
-            className="w-full h-[75%] object-cover rounded-none"
+            alt="Surer Tori"
+            className="w-full h-[100%] object-cover rounded-none"
           />
         </div>
 
         {/* Text Section */}
-        <div className="w-full md:w-1/2 p-6 md:p-12 relative -mt-22">
+        <div className="w-full md:w-1/2 p-6 md:p-12 relative mt-0 md:mt-10">
           {/* Decorative Borders using before */}
           {/* <div>
             <SectionTitle head={"About Us"}></SectionTitle>
@@ -29,7 +29,7 @@ const About = () => {
           <div className="">
             <p className="mt-4 text-gray-700 text-justify">
               Welcome to Surer Tori, a place where the timeless beauty of violin
-              music comes alive. Founded in the heart of Belur, Kolkata, our
+              music comes alive. Founded in the heart of Belur, Howrah, our
               school is dedicated to nurturing a deep love for music through the
               elegance of the violin.
             </p>
