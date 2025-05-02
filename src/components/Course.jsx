@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import SectionTitle from "./shared/SectionTitle";
 import Container from "./shared/Container";
 import { PiChalkboardTeacherBold } from "react-icons/pi";
+import { Link } from "react-router";
 
 const Course = () => {
   const [course, setCourse] = useState([]);
@@ -65,9 +66,9 @@ const Course = () => {
                   Enroll Now
                 </button>
               </div> */}
-              <button className="mt-3 btn-sm bg-[#D2AB69] text-white text-md font-semibold px-4 py-2 rounded-sm cursor-pointer hover:bg-[#c7a66d] transition">
+              <Link to="/courses"><button className="mt-3 btn-sm bg-[#D2AB69] text-white text-md font-semibold px-4 py-2 rounded-sm cursor-pointer hover:bg-[#c7a66d] transition">
                 Explore Now
-              </button>
+              </button></Link>
             </div>
           ))}
         </div>

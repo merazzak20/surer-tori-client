@@ -6,7 +6,7 @@ const PageHeader = ({pageTitle}) => {
                 className="bg-[#551516] py-24 mb-5"
                 style={{
                   backgroundImage: `linear-gradient(rgba(85, 21, 22, 0.9), rgba(85, 21, 22, 0.8)), url(${about})`,
-                  backgroundPosition: "top",
+                  backgroundPosition: "topnnn",
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                   backgroundAttachment: "fixed",
