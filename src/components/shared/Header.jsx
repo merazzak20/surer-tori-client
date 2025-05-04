@@ -178,6 +178,7 @@ const Header = () => {
             `hover:text-[#d2ab69] ${isActive ? "text-[#d2ab69]" : "text-white"}`
           }
           to="/courses"
+          onClick={() => setIsOpen(false)}
         >
           Courses
         </NavLink>
@@ -188,6 +189,7 @@ const Header = () => {
             `hover:text-[#d2ab69] ${isActive ? "text-[#d2ab69]" : "text-white"}`
           }
           to="/theory"
+          onClick={() => setIsOpen(false)}
         >
           Music Theory & Notes
         </NavLink>
@@ -198,6 +200,7 @@ const Header = () => {
             `hover:text-[#d2ab69] ${isActive ? "text-[#d2ab69]" : "text-white"}`
           }
           to="/student"
+          onClick={() => setIsOpen(false)}
         >
           Student
         </NavLink>
