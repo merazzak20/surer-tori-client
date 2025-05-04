@@ -12,7 +12,7 @@ const Course = () => {
       .then((res) => res.json())
       .then((data) => setCourse(data));
   }, []);
-  console.log(course);
+  // console.log(course);
   return (
     <div id="course" className="py-12 mb-10">
       <div className="w-11/12 lg:w-10/12 mx-auto relative mb-6">
@@ -66,9 +66,11 @@ const Course = () => {
                   Enroll Now
                 </button>
               </div> */}
-              <Link to="/courses"><button className="mt-3 btn-sm bg-[#D2AB69] text-white text-md font-semibold px-4 py-2 rounded-sm cursor-pointer hover:bg-[#c7a66d] transition">
-                Explore Now
-              </button></Link>
+              <Link to="/courses">
+                <button className="mt-3 btn-sm bg-[#D2AB69] text-white text-md font-semibold px-4 py-2 rounded-sm cursor-pointer hover:bg-[#c7a66d] transition">
+                  Explore Now
+                </button>
+              </Link>
             </div>
           ))}
         </div>
