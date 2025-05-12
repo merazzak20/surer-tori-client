@@ -8,7 +8,7 @@ import {
   FaWhatsapp,
   FaYoutube,
 } from "react-icons/fa6";
-import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -83,12 +83,17 @@ const Footer = () => {
                   <FaFacebook className="text-2xl text-[#D2AB69]" />
                 </a>
                 <a
-                target="_blank"
-                 className="bg-[#9c2227] p-3 rounded-sm" 
-                 href="https://www.instagram.com/debiprosad_mallick_violinist?utm_source=qr&igsh=dzZmNW0ydXc4bDlh">
+                  target="_blank"
+                  className="bg-[#9c2227] p-3 rounded-sm"
+                  href="https://www.instagram.com/debiprosad_mallick_violinist?utm_source=qr&igsh=dzZmNW0ydXc4bDlh"
+                >
                   <FaInstagram className="text-2xl text-[#D2AB69]" />
                 </a>
-                <a className="bg-[#9c2227] p-3 rounded-sm" href="/">
+                <a
+                  className="bg-[#9c2227] p-3 rounded-sm"
+                  target="_blank"
+                  href="https://youtube.com/@surertoriviolin?feature=shared"
+                >
                   <FaYoutube className="text-2xl text-[#D2AB69]" />
                 </a>
               </div>
