@@ -123,7 +123,7 @@ const UserReview = ({ feedback }) => {
       </p>
       {feedback.length > 100 && (
         <button
-          className="cursor-pointer text-xl text-[#D2AB69]"
+          className="cursor-pointer text-[#D2AB69]"
           onClick={() => setShow(!show)}
         >
           {show ? <BiSolidUpArrowSquare className="text-2xl" /> : "Read More"}

@@ -34,7 +34,7 @@ const ContactUs = () => {
   return (
     <div
       id="contact"
-      className="flex flex-col lg:flex-row items-center justify-center my-10 mt-16"
+      className="flex flex-col lg:flex-row items-center justify-center my-10"
     >
       {/* Left side with image */}
       <div
@@ -50,7 +50,7 @@ const ContactUs = () => {
       </div>
 
       {/* Right side with form */}
-      <div className="w-full md:w-10/12 h-[450px] bg-gray-100 p-10">
+      <div className="w-full md:w-10/12 h-[450px] border border-[#551516] border-x-0 p-10">
         <form ref={form} onSubmit={sendEmail} className="space-y-6">
           {/* Email and Name */}
           <div className="flex gap-4">
