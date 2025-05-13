@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import useAxiosPublic from "../hooks/useAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
+import { useState } from "react";
+import { BiSolidUpArrowSquare } from "react-icons/bi";
 
 const Testimonial = () => {
   // useEffect(() => {
@@ -80,11 +82,12 @@ const Testimonial = () => {
                     <h4 className="text-gray-600">{review.title}</h4>
                   </div>
                 </div>
+                <UserReview feedback={review?.review}></UserReview>
                 <p className="mt-2 text-gray-500">
                   {/* {review?.review && review.review.length > 100
                     ? `${review.review.slice(0, 100)}...`
                     : review?.review} */}
-                  {review?.review}
+                  {/* {review?.review} */}
                 </p>
                 {/* <p>{review.review}</p> */}
 
@@ -107,6 +110,25 @@ const Testimonial = () => {
           </Slider>
         </div>
       </Container>
+    </div>
+  );
+};
+
+const UserReview = ({ feedback }) => {
+  const [show, setShow] = useState(false);
+  return (
+    <div>
+      <p className="mt-2 text-gray-500">
+        {show ? feedback : `${feedback.slice(0, 100)}...`}
+      </p>
+      {feedback.length > 100 && (
+        <button
+          className="cursor-pointer text-xl text-[#D2AB69]"
+          onClick={() => setShow(!show)}
+        >
+          {show ? <BiSolidUpArrowSquare className="text-2xl" /> : "Read More"}
+        </button>
+      )}
     </div>
   );
 };
