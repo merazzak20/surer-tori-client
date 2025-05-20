@@ -1,35 +1,163 @@
 [
   {
     "id": 1,
-    "title": "Beginners  (Developing Proper Technique)",
-    "instructor": "Deviprasad Mallick",
+    "title": "Beginners (Developing Proper Technique)",
     "image": "https://i.ibb.co.com/JRsJHtr7/a-heartwarming-soft-focus-portrait-photo-TCX-ji-J-TRm1mt-K8-B4-WZog-7-axy-Nie-Rs-GCz-G1u-A9-FR6-Q.jpg",
-    "description": "Developing proper technique, including posture, bow hold, and left-hand finger placement. This course is perfect for absolute beginners or those who want to refine their basic skills. You will learn simple melodies, basic rhythms, and how to read music.",
-    "duration": "6 weeks",
-
-    "level": "Beginner",
-    "rating": 4.8
+    "description": {
+      "summary": "Developing proper technique, including posture, bow hold, and left-hand finger placement.",
+      "ageLimit": "The minimum age of the student needs to be 7 yrs. There is no upper age limit.",
+      "sections": [
+        {
+          "title": "Proper Technique",
+          "points": [
+            "Posture: Maintain a relaxed and upright posture while playing.",
+            "Bow Hold: Learn the correct bow grip and how to move the bow smoothly.",
+            "Left-Hand Finger Placement: Practice placing fingers on the strings with proper finger shapes and avoiding tension."
+          ]
+        },
+        {
+          "title": "Basic Scales and Songs",
+          "points": [
+            "Early Scales: A major, D major, and G major are common starting points.",
+            "Simple Songs: Choose pieces that use the scales and fingerings you're learning."
+          ]
+        },
+        {
+          "title": "Bow Control",
+          "points": [
+            "Full Bow Length: Learn to use the entire length of the bow for a full and even sound.",
+            "Tone Production: Experiment with different bow speeds and pressures to create different tones."
+          ]
+        },
+        {
+          "title": "Intonation",
+          "points": [
+            "Accurate Pitch: Practice making sure notes are played at the correct pitch, especially when moving between open strings and fingered notes.",
+            "Ear Training: Develop your ability to listen to and identify notes and intervals."
+          ]
+        },
+        {
+          "title": "Patience and Persistence",
+          "points": [
+            "Practice Regularly: Consistent practice, even in short bursts, is crucial for progress.",
+            "Don't Get Discouraged: It's normal to encounter challenges as you learn, but keep practicing and seeking guidance from a teacher."
+          ]
+        }
+      ]
+    },
+    "level": "Beginner"
   },
   {
     "id": 2,
     "title": "Intermediate",
-    "instructor": "Deviprasad Mallick",
     "image": "https://i.ibb.co.com/qYsxfYJN/freepik-candid-photography-with-natural-textures-and-highl-47988.png",
-    "description": "Take your skills to the next level with more complex techniques, music reading, and classical pieces. Ideal for students who already have basic knowledge and want to grow further.",
-    "duration": "8 weeks",
-
-    "level": "Intermediate",
-    "rating": 4.7
+    "description": {
+      "summary": "Building on foundational skills to explore more advanced bowing, intonation, and musical expression.",
+      "ageLimit": "The minimum age of the student needs to be 7 yrs. There is no upper age limit.",
+      "sections": [
+        {
+          "title": "Proper Technique",
+          "points": [
+            "Posture: Maintain a relaxed and upright posture while playing.",
+            "Bow Hold: Learn the correct bow grip and how to move the bow smoothly.",
+            "Left-Hand Finger Placement: Practice placing fingers on the strings with proper finger shapes and avoiding tension."
+          ]
+        },
+        {
+          "title": "Basic Scales and Songs",
+          "points": [
+            "Early Scales: A major, D major, and G major are common starting points.",
+            "Simple Songs: Choose pieces that use the scales and fingerings you're learning."
+          ]
+        },
+        {
+          "title": "Bow Control",
+          "points": [
+            "Full Bow Length: Learn to use the entire length of the bow for a full and even sound.",
+            "Tone Production: Experiment with different bow speeds and pressures to create different tones."
+          ]
+        },
+        {
+          "title": "Intonation",
+          "points": [
+            "Accurate Pitch: Practice making sure notes are played at the correct pitch, especially when moving between open strings and fingered notes.",
+            "Ear Training: Develop your ability to listen to and identify notes and intervals."
+          ]
+        },
+        {
+          "title": "Patience and Persistence",
+          "points": [
+            "Practice Regularly: Consistent practice, even in short bursts, is crucial for progress.",
+            "Don't Get Discouraged: It's normal to encounter challenges as you learn, but keep practicing and seeking guidance from a teacher."
+          ]
+        },
+        {
+          "title": "Why choose an intermediate violin?",
+          "points": [
+            "Improved Sound Quality: The better materials and construction of intermediate violins lead to a richer, more resonant sound.",
+            "Enhanced Playability: They are often easier to play and more comfortable, especially for advanced techniques like shifting and vibrato.",
+            "Longevity: Intermediate violins are built to last and can see you through several years of learning and playing.",
+            "Progression: They are a natural step up from beginner violins and can help you reach your full potential as a musician."
+          ]
+        }
+      ]
+    },
+    "level": "Intermediate"
   },
   {
     "id": 3,
-    "title": "Advance (Certified Course)",
-    "instructor": "Deviprasad Mallick",
+    "title": "Advanced",
     "image": "https://i.ibb.co.com/mrz89tYM/freepik-candid-photography-with-natural-textures-and-highl-66334.jpg",
-    "description": "Master the art of violin playing with advanced techniques, intricate compositions, and performance training. This course is designed for those aiming for excellence and stage performance.",
-    "duration": "10 weeks",
-
-    "level": "Advanced",
-    "rating": 4.9
+    "description": {
+      "summary": "For skilled players aiming to refine technique, expand repertoire, and prepare for professional-level performance.",
+      "ageLimit": "The minimum age of the student needs to be 7 yrs. There is no upper age limit.",
+      "sections": [
+        {
+          "title": "Proper Technique",
+          "points": [
+            "Posture: Maintain a relaxed and upright posture while playing.",
+            "Bow Hold: Learn the correct bow grip and how to move the bow smoothly.",
+            "Left-Hand Finger Placement: Practice placing fingers on the strings with proper finger shapes and avoiding tension."
+          ]
+        },
+        {
+          "title": "Basic Scales and Songs",
+          "points": [
+            "Early Scales: A major, D major, and G major are common starting points.",
+            "Simple Songs: Choose pieces that use the scales and fingerings you're learning."
+          ]
+        },
+        {
+          "title": "Bow Control",
+          "points": [
+            "Full Bow Length: Learn to use the entire length of the bow for a full and even sound.",
+            "Tone Production: Experiment with different bow speeds and pressures to create different tones."
+          ]
+        },
+        {
+          "title": "Intonation",
+          "points": [
+            "Accurate Pitch: Practice making sure notes are played at the correct pitch, especially when moving between open strings and fingered notes.",
+            "Ear Training: Develop your ability to listen to and identify notes and intervals."
+          ]
+        },
+        {
+          "title": "Patience and Persistence",
+          "points": [
+            "Practice Regularly: Consistent practice, even in short bursts, is crucial for progress.",
+            "Don't Get Discouraged: It's normal to encounter challenges as you learn, but keep practicing and seeking guidance from a teacher."
+          ]
+        },
+        {
+          "title": "Who Should Take an Advanced Violin Course?",
+          "points": [
+            "Accomplished amateur violinists: Individuals with a solid foundation in violin playing who want to refine their technique and musical expression.",
+            "Intermediate and advanced players: Those looking to expand their repertoire, learn more advanced techniques, and deepen their understanding of music theory and history.",
+            "Musicians preparing for auditions, competitions, or professional performance opportunities: Advanced courses can help develop the necessary skills and confidence for these situations."
+          ]
+        }
+      ]
+    },
+    "level": "Advanced"
   }
 ]
