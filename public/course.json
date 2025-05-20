@@ -6,7 +6,7 @@
     "image": "https://i.ibb.co.com/JRsJHtr7/a-heartwarming-soft-focus-portrait-photo-TCX-ji-J-TRm1mt-K8-B4-WZog-7-axy-Nie-Rs-GCz-G1u-A9-FR6-Q.jpg",
     "description": "Developing proper technique, including posture, bow hold, and left-hand finger placement. This course is perfect for absolute beginners or those who want to refine their basic skills. You will learn simple melodies, basic rhythms, and how to read music.",
     "duration": "6 weeks",
-    "price": 49.99,
+
     "level": "Beginner",
     "rating": 4.8
   },
@@ -17,7 +17,7 @@
     "image": "https://i.ibb.co.com/qYsxfYJN/freepik-candid-photography-with-natural-textures-and-highl-47988.png",
     "description": "Take your skills to the next level with more complex techniques, music reading, and classical pieces. Ideal for students who already have basic knowledge and want to grow further.",
     "duration": "8 weeks",
-    "price": 79.99,
+
     "level": "Intermediate",
     "rating": 4.7
   },
@@ -28,7 +28,7 @@
     "image": "https://i.ibb.co.com/mrz89tYM/freepik-candid-photography-with-natural-textures-and-highl-66334.jpg",
     "description": "Master the art of violin playing with advanced techniques, intricate compositions, and performance training. This course is designed for those aiming for excellence and stage performance.",
     "duration": "10 weeks",
-    "price": 99.99,
+
     "level": "Advanced",
     "rating": 4.9
   }

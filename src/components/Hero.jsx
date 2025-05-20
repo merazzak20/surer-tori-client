@@ -78,9 +78,14 @@ const Hero = () => {
           }}
         >
           <Container>
-            <h1 className="absolute bottom-50 max-w-[10/12] lg:max-w-7/12 text-white text-xl">
-              Hello
-            </h1>
+            <div className="absolute max-w-[10/12] lg:max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold rusticRoadway">
+              <p>
+                {" "}
+                Talent will get you where you would like to be, but you must
+                practice consistently and have a strong will Power to
+                continue improving.
+              </p>
+            </div>
           </Container>
         </SwiperSlide>
         <SwiperSlide
