@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Container from "../../../components/shared/Container";
 import { MdVerified } from "react-icons/md";
-import { FaIndianRupeeSign } from "react-icons/fa6";
 
 const CoursesComponent = () => {
   const [courses, setCourses] = useState([]);
@@ -17,7 +16,7 @@ const CoursesComponent = () => {
       {courses.map((course) => (
         <div
           key={course.id}
-          className="flex flex-col md:flex-row gap-4 my-4 justify-between items-center border border-[#551516] rounded-xl shadow-md overflow-hidden relative"
+          className="flex flex-col md:flex-row gap-4 my-4 justify-between items-center rounded-xl shadow-md overflow-hidden relative"
         >
           {/* Course Image */}
           <div className="md:w-1/2 lg:max-h-[450px] overflow-hidden">
@@ -29,12 +28,15 @@ const CoursesComponent = () => {
           </div>
 
           {/* Course Content */}
-          <div className="md:w-1/2 p-6 flex flex-col justify-between relative">
+          <div className="md:w-1/2 px-6 pb-4 flex flex-col justify-between relative">
             <MdVerified className="absolute hidden md:block top-3 right-1 text-7xl lg:text-9xl opacity-10" />
 
             {/* Title and Basic Info */}
             <div>
               <h2 className="text-2xl font-bold mb-2">{course.title}</h2>
+              <p className="text-sm text-gray-500 mb-1">
+                <strong>Instructor:</strong> {course.instructor}
+              </p>
               <p className="text-sm text-gray-500 mb-1">
                 <strong>Level:</strong> {course.level}
               </p>
@@ -43,16 +45,16 @@ const CoursesComponent = () => {
               </p>
 
               {/* Summary */}
-              <p className="text-gray-700 mt-3">{course.description.summary}</p>
+              <p className="text-gray-500 mt-3">{course.description.summary}</p>
 
               {/* Sections */}
-              <div className="mt-4 space-y-3 max-h-[250px] overflow-y-auto pr-2">
+              <div className="mt-4 space-y-3 max-h-[250px] overflow-y-scroll pr-2">
                 {course.description.sections.map((section, index) => (
                   <div key={index}>
-                    <h4 className="text-sm font-semibold text-[#551516] mb-1">
+                    <h4 className="text-sm font-semibold text-[#D2AB69] mb-1">
                       {section.title}
                     </h4>
-                    <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
+                    <ul className="list-disc list-inside text-sm space-y-1">
                       {section.points.map((point, i) => (
                         <li key={i}>{point}</li>
                       ))}
@@ -61,16 +63,6 @@ const CoursesComponent = () => {
                 ))}
               </div>
             </div>
-
-            {/* Pricing (Optional) */}
-            {course.price && (
-              <div className="text-right mt-4">
-                <span className="text-xl font-semibold flex items-center gap-1 justify-end">
-                  <FaIndianRupeeSign />
-                  {course.price}
-                </span>
-              </div>
-            )}
           </div>
         </div>
       ))}

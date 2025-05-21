@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "instructor": "Deviprasad Mallik",
     "title": "Beginners (Developing Proper Technique)",
     "image": "https://i.ibb.co.com/JRsJHtr7/a-heartwarming-soft-focus-portrait-photo-TCX-ji-J-TRm1mt-K8-B4-WZog-7-axy-Nie-Rs-GCz-G1u-A9-FR6-Q.jpg",
     "description": {
@@ -49,6 +50,7 @@
   },
   {
     "id": 2,
+    "instructor": "Deviprasad Mallik",
     "title": "Intermediate",
     "image": "https://i.ibb.co.com/qYsxfYJN/freepik-candid-photography-with-natural-textures-and-highl-47988.png",
     "description": {
@@ -106,6 +108,7 @@
   },
   {
     "id": 3,
+    "instructor": "Deviprasad Mallik",
     "title": "Advanced",
     "image": "https://i.ibb.co.com/mrz89tYM/freepik-candid-photography-with-natural-textures-and-highl-66334.jpg",
     "description": {

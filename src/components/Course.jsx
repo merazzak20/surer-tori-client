@@ -50,7 +50,7 @@ const Course = () => {
                   </span>
                 </div>
                 <p className="text-gray-500 text-sm mt-2">
-                  {cr?.description?.slice(0, 80)}...
+                  {cr?.description?.summary?.slice(0, 80)}...
                 </p>
               </div>
               {/* <div className="flex justify-between items-center mt-4">
