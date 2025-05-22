@@ -36,7 +36,10 @@ const Hero = () => {
           }}
         >
           <Container>
-            <div className="absolute bottom-20 max-w-[10/12] lg:max-w-7/12 text-white text-2xl tracking-wide font-semibold rusticRoadway">
+            <div
+              data-aos="fade-up"
+              className="absolute bottom-20 max-w-[10/12] lg:max-w-7/12 text-white text-2xl tracking-wide font-semibold rusticRoadway"
+            >
               <p>
                 "When you play a violin piece, you are a storyteller, and you're
                 telling a story." <br />
@@ -56,7 +59,10 @@ const Hero = () => {
           }}
         >
           <Container>
-            <div className="absolute max-w-[10/12] lg:max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold rusticRoadway">
+            <div
+              data-aos="fade-up"
+              className="absolute max-w-[10/12] lg:max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold rusticRoadway"
+            >
               <p>
                 If there are different musical instruments tuned alike in one
                 room, all of you may have noticed that when one is struck, the
@@ -78,7 +84,10 @@ const Hero = () => {
           }}
         >
           <Container>
-            <div className="absolute max-w-[10/12] lg:max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold rusticRoadway">
+            <div
+              data-aos="fade-up"
+              className="absolute max-w-[10/12] lg:max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold rusticRoadway"
+            >
               <p>
                 {" "}
                 Talent will get you where you would like to be, but you must
@@ -98,7 +107,10 @@ const Hero = () => {
           }}
         >
           <Container>
-            <div className="absolute max-w-[10/12] lg:max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold rusticRoadway">
+            <div
+              data-aos="fade-up"
+              className="absolute max-w-[10/12] lg:max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold rusticRoadway"
+            >
               <p>Group Picnic Organized by Surer Tori.</p>
             </div>
           </Container>
