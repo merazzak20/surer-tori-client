@@ -6,14 +6,12 @@ import SectionHead from "./shared/SectionHead";
 
 const About = () => {
   return (
-    <div id="about" className="bg-white md:pt-0">
+    <div id="about" className="bg-white md:pt-0 overflow-hidden">
       <div className="flex flex-col md:flex-row items-center ">
         {/* Image Section */}
-        <div
-          data-aos="fade-right"
-          className="relative  md:block w-full h-[80vh] md:w-1/2 mt-5 md:mt-26"
-        >
+        <div className="relative  md:block w-full h-[80vh] md:w-1/2 mt-5 md:mt-26">
           <img
+            data-aos="fade-right"
             src={image}
             alt="Surer Tori"
             className="w-full h-[100%] object-cover rounded-none"
@@ -22,7 +20,7 @@ const About = () => {
 
         {/* Text Section */}
         <div
-          data-aos="fade-left"
+          data-aos="fade-up md:fade-left"
           className="w-full md:w-1/2 p-6 md:p-12 relative mt-0 md:mt-10"
         >
           {/* Decorative Borders using before */}
