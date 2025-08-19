@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import about from "../../assets/hero1.jpg";
 
 const PageHeader = ({ pageTitle }) => {
@@ -21,6 +22,9 @@ const PageHeader = ({ pageTitle }) => {
       {/* {additional ? <p className="text-center text-[#d2ab69] font-semibold mt-4">{additional}</p> : ""} */}
     </div>
   );
+};
+PageHeader.propTypes = {
+  pageTitle: PropTypes.string.isRequired,
 };
 
 export default PageHeader;

@@ -62,7 +62,10 @@ const Video = () => {
       <dialog id="my_modal_4" className="modal">
         <div className="modal-box w-11/12 max-w-5xl">
           <video controls autoPlay className="w-full h-auto">
-            <source src={videoSrc} type="video/mp4" />
+            <source
+              src="https://drive.google.com/file/d/1L23u8N7P8PMcasMQGFYnkoMif_hkwPWg/view?usp=sharing"
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
 

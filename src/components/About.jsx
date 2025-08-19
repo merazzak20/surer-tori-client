@@ -38,15 +38,15 @@ const About = () => {
               elegance of the violin.
             </p>
             <p className="mt-4 text-gray-700 text-justify">
-              At Surer Tori, we believe that music is not just an art — it's a
-              journey of the soul. Whether you are a beginner taking your first
-              steps or an advanced student refining your craft, our experienced
-              instructors offer personalized training to help you grow with
-              confidence and joy.
+              At Surer Tori, we believe that music is not just an art —
+              it&apos;s a journey of the soul. Whether you are a beginner taking
+              your first steps or an advanced student refining your craft, our
+              experienced instructors offer personalized training to help you
+              grow with confidence and joy.
             </p>
             <p className="mt-4 text-gray-700 text-justify">
-              Come, be a part of the Surer Tori family — let's set sail on a
-              beautiful musical journey together!
+              Come, be a part of the Surer Tori family — let&apos;s set sail on
+              a beautiful musical journey together!
             </p>
             <Link to="/about">
               <div className="my-4">

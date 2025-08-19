@@ -41,9 +41,9 @@ const Hero = () => {
               className="absolute bottom-20 max-w-[10/12] lg:max-w-7/12 text-white text-2xl tracking-wide font-semibold rusticRoadway"
             >
               <p>
-                "When you play a violin piece, you are a storyteller, and you're
-                telling a story." <br />
-                "A violin should be played with love, or not at all."
+                &quot;When you play a violin piece, you are a storyteller, and
+                you&apos;re telling a story.&quot; <br />
+                &quot;A violin should be played with love, or not at all.&quot;
               </p>
               <p className="mt-4 ml-2">- Joseph Wechsberg</p>
             </div>
@@ -91,8 +91,8 @@ const Hero = () => {
               <p>
                 {" "}
                 Talent will get you where you would like to be, but you must
-                practice consistently and have a strong will Power to
-                continue improving.
+                practice consistently and have a strong will Power to continue
+                improving.
               </p>
             </div>
           </Container>
