@@ -60,25 +60,18 @@ const Video = () => {
         </Container>
       </div>
       <dialog id="my_modal_4" className="modal">
-        <div className="modal-box w-11/12 max-w-5xl">
-          {/* <video controls autoPlay className="w-full h-auto">
-            <source
-              src="https://drive.google.com/file/d/1L23u8N7P8PMcasMQGFYnkoMif_hkwPWg/view?usp=sharing"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video> */}
-
-          {/* for youtube video */}
+        <div className="modal-box w-11/12 max-w-5xl relative aspect-video">
+          {/* YouTube video */}
           <iframe
             className="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/4jKkT3d8gdI?si=8UsUkRip23BEHOME"
+            src="https://www.youtube.com/embed/2F_U109Hy8s?si=oyCvuv_kDL-q9lco&autoplay=1&mute=1&modestbranding=1&rel=0&controls=1"
             title="YouTube video"
             frameBorder="0"
-            allow="autoplay; encrypted-media"
+            allow="autoplay; encrypted-media; picture-in-picture"
             allowFullScreen
           ></iframe>
         </div>
+
         <form method="dialog" className="modal-backdrop">
           <button>close</button>
         </form>
