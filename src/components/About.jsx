@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import image from "../assets/left-about.jpg";
+import image from "../assets/about.png";
 import Button from "./shared/Button";
 import SectionHead from "./shared/SectionHead";
 // import SectionTitle from "./shared/SectionTitle";

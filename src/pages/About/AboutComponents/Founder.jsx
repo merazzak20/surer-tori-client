@@ -22,7 +22,7 @@ const Founder = () => {
           <div className="right-side w-full md:w-7/12 text-left">
             <div className="space-y-1 mb-3 border-b border-[#9C2227] pb-2">
               <h2 className="text-4xl font-bold text-[#D2AB69]">
-                Deviprasad Mallick
+                Debiprasad Mallick
               </h2>
               <h4 className="text-base font-medium text-[#D2AB69]">
                 Founder, Surer Tori
