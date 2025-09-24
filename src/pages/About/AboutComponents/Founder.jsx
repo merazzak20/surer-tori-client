@@ -31,18 +31,20 @@ const Founder = () => {
             <div className="info">
               <p className="text-justify">
                 <strong>"SURER TORI"</strong> an institution to educate violin
-                in the proper way for students near & abroad. Formed and Guided
-                by Mr, DEBIPRASAD MALLICK. Born & brought up in a violin family.
-                Learned violin from his father, renowned violin teacher of
-                santipur Mr. Gopikanta mallick. Later perfected the art in
-                Indian classical music with the guidance of Guru Mr. Subir
-                Mukherjee. Mr, Bhaskar Sen. Mr, Tarun Chakraborty. Mr. Saket
-                Sahu. & in western Mr. Jyoti Shankar Roy. Mr Amitava Ghosh.. Now
-                searving as a violin teacher in renowned school - M. C. k. V.
+                in the proper way for students near and abroad, formed and
+                guided by Mr. DEBIPRASAD MALLICK, born & brought up in a violin
+                family. Learned violin from his father, who was a renowned
+                violin teacher of Santipur, Mr. Gopikanta Mallick. Later
+                perfected the art in Indian classical music with the guidance of
+                Guru Mr. Subir Mukherjee, Mr. Bhaskar Sen, Mr. Tarun
+                Chakraborty, Mr. Saket Sahu and, in Western music, Mr. Jyoti
+                Shankar Roy & Mr. Amitava Ghosh. Now serving as a violin teacher
+                in a renowned school - M. C. Kejriwal Vidyapeeth.
               </p>
+
               <p className="text-justify">
-                Besides violin he has been learning ESRAJ with the guidance of
-                Guru Mr. Debayan Majumdaar.
+                Besides violin, he has been learning ESRAJ with the guidance of
+                Guru Mr. Debayan Majumder.
               </p>
             </div>
             <div className=" space-x-2 mt-2">
