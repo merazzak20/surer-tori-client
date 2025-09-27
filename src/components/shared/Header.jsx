@@ -124,7 +124,7 @@ const Header = () => {
           }
           to="/student"
         >
-          Student
+          Students
         </NavLink>
       </li>
       <li>
@@ -212,13 +212,13 @@ const Header = () => {
           to="/student"
           onClick={() => setIsOpen(false)}
         >
-          Student
+          Students
         </NavLink>
       </li>
       <li>
         <button
           onClick={() => setIsModalOpen(true)}
-          className="btn bg-transparent shadow-none border border-[#D2AB69] rounded-full "
+          className="btn bg-transparent shadow-none text-white border border-[#D2AB69] rounded-full "
         >
           Valuable Feedback
         </button>
