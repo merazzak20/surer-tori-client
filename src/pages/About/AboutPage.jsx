@@ -5,9 +5,9 @@ import PageHeader from "../../components/shared/PageHeader";
 const AboutPage = () => {
   return (
     <div className="">
-      <PageHeader pageTitle={'About Page'}></PageHeader>
+      <PageHeader pageTitle={"About Page"}></PageHeader>
       <Founder></Founder>
-      <UserFeedbackForm></UserFeedbackForm>
+      {/* <UserFeedbackForm></UserFeedbackForm> */}
     </div>
   );
 };

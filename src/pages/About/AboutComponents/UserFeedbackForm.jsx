@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Container from "../../../components/shared/Container";
-import SectionTitle from "../../../components/shared/SectionTitle";
+// import Container from "../../../components/shared/Container";
+// import SectionTitle from "../../../components/shared/SectionTitle";
 import useAxiosPublic from "../../../hooks/useAxiosPublic";
 import toast from "react-hot-toast";
 
@@ -46,13 +46,10 @@ const UserFeedbackForm = () => {
   };
   return (
     <div className="my-4">
-      <Container>
-        <SectionTitle head={"User Valuable Feedback"}></SectionTitle>
-        <div className="my-4">
-          <form
-            onSubmit={handleSubmit}
-            className="grid grid-cols-1 md:grid-cols-2 gap-6"
-          >
+      {/* <SectionTitle head={"User Valuable Feedback"}></SectionTitle> */}
+      <div className="my-4">
+        <form onSubmit={handleSubmit}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Left Column */}
             <div className="space-y-6">
               {/* Name */}
@@ -77,7 +74,7 @@ const UserFeedbackForm = () => {
               {/* Title */}
               <div>
                 <label htmlFor="title" className="block text-lg font-medium ">
-                  Designation with Organization
+                  Title
                 </label>
                 <input
                   type="text"
@@ -91,25 +88,6 @@ const UserFeedbackForm = () => {
                   className="w-full px-4 py-2 border border-gray-300 rounded-none focus:outline-none "
                   required
                 />
-              </div>
-
-              {/* Review */}
-              <div>
-                <label htmlFor="review" className="block text-lg font-medium">
-                  Review
-                </label>
-                <textarea
-                  id="review"
-                  name="review"
-                  placeholder="Enter your feedback"
-                  onChange={(e) =>
-                    setFormData({ ...formData, review: e.target.value })
-                  }
-                  value={formData.review}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-none  focus:outline-none"
-                  rows="4"
-                  required
-                ></textarea>
               </div>
             </div>
 
@@ -145,7 +123,6 @@ const UserFeedbackForm = () => {
                       name="rating-2"
                       value="2"
                       className="mask mask-star-2 bg-[#9C2227]"
-                      
                     />
                     <input
                       type="radio"
@@ -169,27 +146,48 @@ const UserFeedbackForm = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Submit Button */}
-              <div>
-                <button
-                  type="submit"
-                  className={`w-full px-6 cursor-pointer py-3 font-semibold text-zinc-800 bg-[#d2ab69] focus:bg-[#a0804a] rounded-none border-none hover:bg-[#b09970] focus:outline-none ${
-                    pending ? "disabled" : ""
-                  }`}
-                  disabled={pending}
-                >
-                  {pending ? (
-                    <span className="loading loading-spinner loading-md"></span>
-                  ) : (
-                    "Submit Review"
-                  )}
-                </button>
-              </div>
             </div>
-          </form>
-        </div>
-      </Container>
+          </div>
+
+          {/* bottom part */}
+          <div className="w-full mt-3">
+            {/* Review */}
+            <div>
+              <label htmlFor="review" className="block text-lg font-medium">
+                Review
+              </label>
+              <textarea
+                id="review"
+                name="review"
+                placeholder="Enter your feedback"
+                onChange={(e) =>
+                  setFormData({ ...formData, review: e.target.value })
+                }
+                value={formData.review}
+                className="w-full px-4 py-2 border border-gray-300 rounded-none  focus:outline-none"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            {/* Submit Button */}
+            <div>
+              <button
+                type="submit"
+                className={`w-full px-6 cursor-pointer py-3 font-semibold text-zinc-800 bg-[#d2ab69] focus:bg-[#a0804a] rounded-none border-none hover:bg-[#b09970] focus:outline-none ${
+                  pending ? "disabled" : ""
+                }`}
+                disabled={pending}
+              >
+                {pending ? (
+                  <span className="loading loading-spinner loading-md"></span>
+                ) : (
+                  "Submit Review"
+                )}
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

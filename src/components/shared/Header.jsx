@@ -7,8 +7,10 @@ import { X } from "lucide-react";
 // import { AuthContext } from "../provider/AuthProvider";
 import { NavLink } from "react-router";
 import Container from "./Container";
+import FeedbackModal from "./FeedbackModal";
 
 const Header = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -125,6 +127,14 @@ const Header = () => {
           Student
         </NavLink>
       </li>
+      <li>
+        <button
+          onClick={() => setIsModalOpen(true)}
+          className="btn bg-transparent shadow-none border border-[#D2AB69] rounded-full hover:text-[#d2ab69]"
+        >
+          Valuable Feedback
+        </button>
+      </li>
     </div>
   );
   const socialIcons = (
@@ -205,6 +215,14 @@ const Header = () => {
           Student
         </NavLink>
       </li>
+      <li>
+        <button
+          onClick={() => setIsModalOpen(true)}
+          className="btn bg-transparent shadow-none border border-[#D2AB69] rounded-full "
+        >
+          Valuable Feedback
+        </button>
+      </li>
     </>
   );
   return (
@@ -261,6 +279,12 @@ const Header = () => {
           )}
         </div>
       </Container>
+
+      {/* Modal Component */}
+      <FeedbackModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      ></FeedbackModal>
     </header>
   );
 };

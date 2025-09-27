@@ -38,7 +38,7 @@ const Hero = () => {
           <Container>
             <div
               data-aos="fade-up"
-              className="absolute bottom-20 max-w-[10/12] lg:max-w-7/12 text-white text-2xl tracking-wide font-semibold rusticRoadway"
+              className="absolute bottom-20 max-w-[10/12] lg:max-w-7/12 text-white text-2xl tracking-wide font-semibold mutalis"
             >
               <p>
                 &quot;When you play a violin piece, you are a storyteller, and
@@ -61,7 +61,7 @@ const Hero = () => {
           <Container>
             <div
               data-aos="fade-up"
-              className="absolute max-w-[10/12] lg:max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold rusticRoadway"
+              className="absolute max-w-[10/12] lg:max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold mutalis"
             >
               <p>
                 If there are different musical instruments tuned alike in one
@@ -86,7 +86,7 @@ const Hero = () => {
           <Container>
             <div
               data-aos="fade-up"
-              className="absolute max-w-[10/12] lg:max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold rusticRoadway"
+              className="absolute max-w-[10/12] lg:max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold mutalis"
             >
               <p>
                 {" "}
@@ -109,7 +109,7 @@ const Hero = () => {
           <Container>
             <div
               data-aos="fade-up"
-              className="absolute max-w-[10/12] lg:max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold rusticRoadway"
+              className="absolute max-w-[10/12] lg:max-w-7/12 bottom-20 text-white text-2xl tracking-wide font-semibold mutalis"
             >
               <p>Group Picnic Organized by Surer Tori.</p>
             </div>

@@ -59,8 +59,8 @@ const Testimonial = () => {
   return (
     <div className="py-10">
       <div className="w-11/12 lg:w-10/12 mx-auto relative mb-12">
-        <SectionTitle head={"Appreciated Feedbacks"} />
-        <p className="mt-4">Hear what our customers have to say about us!</p>
+        <SectionTitle head={"Valuable Feedbacks"} />
+        <p className="mt-4">Hear what our well-wishers have to say about us!</p>
       </div>
 
       <Container>

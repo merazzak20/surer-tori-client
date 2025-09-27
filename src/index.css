@@ -45,8 +45,8 @@ html {
   width: 280px;
   height: 273px;
   border: 1px solid #9c2227;
-  top: -145px;
-  left: -95px;
+  top: -110px;
+  left: -100px;
 
   clip-path: polygon(0 0, 100% 0, 100% 50%, 30% 35%, 30% 100%, 0 100%);
 }
