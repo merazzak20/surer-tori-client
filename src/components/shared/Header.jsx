@@ -130,7 +130,7 @@ const Header = () => {
       <li>
         <button
           onClick={() => setIsModalOpen(true)}
-          className="btn bg-transparent shadow-none border border-[#D2AB69] rounded-full hover:text-[#d2ab69]"
+          className="btn bg-transparent shadow-none border text-white border-[#D2AB69] rounded-full hover:text-[#d2ab69] hover:shadow-none"
         >
           Valuable Feedback
         </button>

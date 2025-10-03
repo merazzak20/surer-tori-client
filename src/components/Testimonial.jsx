@@ -8,6 +8,7 @@ import useAxiosPublic from "../hooks/useAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { BiSolidUpArrowSquare } from "react-icons/bi";
+import userIcon from "../assets/user.png";
 
 const Testimonial = () => {
   // useEffect(() => {
@@ -72,11 +73,19 @@ const Testimonial = () => {
                 className="flex flex-col items-center  p-6 rounded-md shadow-none lg:shadow-md bg-gray-50/0 space-x-4"
               >
                 <div className="flex gap-3 items-center">
-                  <img
-                    src={review.image}
-                    alt={review.name}
-                    className="w-18 h-18 object-cover rounded-full mb-4"
-                  />
+                  {review?.image ? (
+                    <img
+                      src={review.image}
+                      alt={review.name}
+                      className="w-18 h-18 object-cover rounded-full mb-4"
+                    />
+                  ) : (
+                    <img
+                      src={userIcon}
+                      alt={review.name}
+                      className="w-18 h-18 object-cover rounded-full mb-4"
+                    />
+                  )}
                   <div>
                     <h2 className="text-xl font-semibold">{review.name}</h2>
                     <h4 className="text-gray-600">{review.title}</h4>
