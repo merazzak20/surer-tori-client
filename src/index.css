@@ -135,6 +135,15 @@ html {
   clip-path: polygon(20% 23%, 79% 19%, 79% 25%);
 }
 
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(100px, 60px) scale(1.15); }
+  66% { transform: translate(-60px, 120px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+.animation-delay-3000 { 
+  animation-delay: 3s; }
+
 /* For tablets (768px - 1024px) */
 @media (max-width: 1024px) {
   .sectionTitle {

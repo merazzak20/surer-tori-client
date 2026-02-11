@@ -153,9 +153,18 @@ const Header = () => {
         <FaWhatsapp className="text-2xl text-[#D2AB69]" />
       </a>
 
-      {/* <li>
-        
-      </li> */}
+      <li>
+        <NavLink
+          className={({ isActive }) =>
+            `hover:text-[#9c2227] hover:font-bold ${
+              isActive ? "text-[#9c2227] font-bold" : "text-white"
+            }`
+          }
+          to="/login"
+        >
+          Login
+        </NavLink>
+      </li>
     </div>
   );
   const mobileLinks = (
